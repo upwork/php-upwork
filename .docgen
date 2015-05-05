@@ -1,0 +1,1 @@
+apigen -s src/ -d docs_html
