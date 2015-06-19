@@ -68,7 +68,7 @@ This includes `console.php` that gets an access token and requests the data
 for applications that are not web-based, and `web.php` for web-based applications.
 There is also `console-own-auth-lib.php` available to use your own php client together with this Upwork library.
 
-Next to this a `composer.json` is included to use with Composer.
+There is also a `composer.json` included to use with Composer.
 
 ## Composer
 In order to easily integrate with your application we recommend using
