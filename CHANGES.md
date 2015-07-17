@@ -1,5 +1,12 @@
 # Release History
 
+## 1.0.1
+* Added new Workdays API - Get Workdays by Comppany
+* Added new Workdays API - Get Workdays by Contract
+
+## 1.0.0
+* welcome to Upwork!
+
 ## 0.1.21
 * Added new Snapshot API - Get Snapshot by Contract
 * Added new Snapshot API - Update Snapshot memo by Contract
