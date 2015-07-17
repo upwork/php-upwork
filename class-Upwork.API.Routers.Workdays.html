@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="generator" content="ApiGen 2.8.0">
 
-	<title>Class Upwork\API\Routers\Workdiary</title>
+	<title>Class Upwork\API\Routers\Workdays</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
 	<script type="text/javascript" src="elementlist.js?1338019369"></script>
@@ -68,8 +68,8 @@
 				<li><a href="class-Upwork.API.Routers.Payments.html">Payments</a></li>
 				<li><a href="class-Upwork.API.Routers.Snapshot.html">Snapshot</a></li>
 				<li><a href="class-Upwork.API.Routers.Teams.html">Teams</a></li>
-				<li><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
-				<li class="active"><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
+				<li class="active"><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
+				<li><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
 			</ul>
 
 
@@ -112,12 +112,12 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class Workdiary</h1>
+	<h1>Class Workdays</h1>
 
 
 	<div class="description">
 	
-<p>Workdiary API</p>
+<p>Workdays API</p>
 
 	</div>
 
@@ -130,7 +130,7 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-<b><span>Upwork\API\Routers\Workdiary</span></b>			
+<b><span>Upwork\API\Routers\Workdays</span></b>			
 			
 			
 		</dd>
@@ -150,8 +150,8 @@
 		
 
 				<b>Link:</b>
-				<a href="http://developers.upwork.com/Work-Diary">http://developers.upwork.com/Work-Diary</a><br>
-		<b>Located at</b> <a href="source-class-Upwork.API.Routers.Workdiary.html#19-81" title="Go to source code">Upwork/API/Routers/Workdiary.php</a><br>
+				<a href="http://developers.upwork.com/#companies-and-teams_get-workdays-by-company">http://developers.upwork.com/#companies-and-teams_get-workdays-by-company</a><br>
+		<b>Located at</b> <a href="source-class-Upwork.API.Routers.Workdays.html#19-82" title="Go to source code">Upwork/API/Routers/Workdays.php</a><br>
 	</div>
 
 
@@ -169,7 +169,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#33-43" title="Go to source code">__construct</a>( <span><code><a href="class-Upwork.API.Client.html">Upwork\API\Client</a></code> <var>$client</var></span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Workdays.html#33-43" title="Go to source code">__construct</a>( <span><code><a href="class-Upwork.API.Client.html">Upwork\API\Client</a></code> <var>$client</var></span> )</code>
 
 		<div class="description short">
 			
@@ -198,7 +198,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="get" id="_get">
+	<tr data-order="getByCompany" id="_getByCompany">
 
 		<td class="attributes"><code>
 			 public 
@@ -208,18 +208,18 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#45-62" title="Go to source code">get</a>( <span>string <var>$company</var></span>, <span>string <var>$username</var></span>, <span>string <var>$date</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<a class="anchor" href="#_getByCompany">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Workdays.html#45-62" title="Go to source code">getByCompany</a>( <span>string <var>$company</var></span>, <span>string <var>$fromDate</var></span>, <span>string <var>$tillDate</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
-<p>Get Workdiary</p>
+<p>Get Workdays</p>
 
 		</div>
 
 		<div class="description detailed hidden">
 			
-<p>Get Workdiary</p>
+<p>Get Workdays</p>
 
 
 
@@ -227,10 +227,10 @@
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
 					<dd><code>string</code><br>$company Company ID</dd>
-					<dt><var>$username</var></dt>
-					<dd><code>string</code><br>$username User ID</dd>
-					<dt><var>$date</var></dt>
-					<dd><code>string</code><br>$date Date</dd>
+					<dt><var>$fromDate</var></dt>
+					<dd><code>string</code><br>$fromDate Start date</dd>
+					<dt><var>$tillDate</var></dt>
+					<dd><code>string</code><br>$tillDate Till date</dd>
 					<dt><var>$params</var></dt>
 					<dd><code>array</code><br>$params (Optional) Parameters</dd>
 				</dl></div>
@@ -242,8 +242,6 @@
 
 
 
-				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Upwork.API.Client.html#_get">Upwork\API\Client::get()</a></code></div>
 
 		</div>
 		</div></td>
@@ -259,7 +257,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getByContract">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#64-80" title="Go to source code">getByContract</a>( <span>string <var>$contract</var></span>, <span>string <var>$date</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Workdays.html#64-81" title="Go to source code">getByContract</a>( <span>string <var>$contract</var></span>, <span>string <var>$fromDate</var></span>, <span>string <var>$tillDate</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			
@@ -277,8 +275,10 @@
 				<div class="list"><dl>
 					<dt><var>$contract</var></dt>
 					<dd><code>string</code><br>$contract Contract ID</dd>
-					<dt><var>$date</var></dt>
-					<dd><code>string</code><br>$date Date</dd>
+					<dt><var>$fromDate</var></dt>
+					<dd><code>string</code><br>$fromDate Start date</dd>
+					<dt><var>$tillDate</var></dt>
+					<dd><code>string</code><br>$tillDate Till date</dd>
 					<dt><var>$params</var></dt>
 					<dd><code>array</code><br>$params (Optional) Parameters</dd>
 				</dl></div>
@@ -303,6 +303,7 @@
 			<a href="class-Upwork.API.Client.html#__request">_request()</a>, 
 			<a href="class-Upwork.API.Client.html#_auth">auth()</a>, 
 			<a href="class-Upwork.API.Client.html#_delete">delete()</a>, 
+			<a href="class-Upwork.API.Client.html#_get">get()</a>, 
 			<a href="class-Upwork.API.Client.html#_getRequestToken">getRequestToken()</a>, 
 			<a href="class-Upwork.API.Client.html#_getServer">getServer()</a>, 
 			<a href="class-Upwork.API.Client.html#_post">post()</a>, 
@@ -323,7 +324,7 @@
 
 		<td class="attributes"><code>mixed</code></td>
 		<td class="name"><code>
-				<a href="source-class-Upwork.API.Routers.Workdiary.html#26" title="Go to source code"><b>ENTRY_POINT</b></a>
+				<a href="source-class-Upwork.API.Routers.Workdays.html#26" title="Go to source code"><b>ENTRY_POINT</b></a>
 		</code></td>
 		<td class="value"><code>UPWORK_API_EP_NAME</code></td>
 		<td class="description"><div>

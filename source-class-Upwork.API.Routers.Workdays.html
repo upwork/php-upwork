@@ -5,7 +5,7 @@
 	<meta name="generator" content="ApiGen 2.8.0">
 	<meta name="robots" content="noindex">
 
-	<title>File Upwork/API/Routers/Workdiary.php</title>
+	<title>File Upwork/API/Routers/Workdays.php</title>
 
 	<script type="text/javascript" src="resources/combined.js?3770084987"></script>
 	<script type="text/javascript" src="elementlist.js?1338019369"></script>
@@ -69,8 +69,8 @@
 				<li><a href="class-Upwork.API.Routers.Payments.html">Payments</a></li>
 				<li><a href="class-Upwork.API.Routers.Snapshot.html">Snapshot</a></li>
 				<li><a href="class-Upwork.API.Routers.Teams.html">Teams</a></li>
-				<li><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
-				<li class="active"><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
+				<li class="active"><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
+				<li><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
 			</ul>
 
 
@@ -101,7 +101,7 @@
 				<a href="namespace-Upwork.API.Routers.html" title="Summary of Upwork\API\Routers"><span>Namespace</span></a>
 			</li>
 			<li>
-				<a href="class-Upwork.API.Routers.Workdiary.html" title="Summary of Upwork\API\Routers\Workdiary"><span>Class</span></a>
+				<a href="class-Upwork.API.Routers.Workdays.html" title="Summary of Upwork\API\Routers\Workdays"><span>Class</span></a>
 			</li>
 		</ul>
 		<ul>
@@ -116,12 +116,12 @@
 <pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
 </span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
 </span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment"> * Upwork auth library for using with public API by OAuth
-</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * Workdiary API
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment"> * Workdays API
 </span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment"> *
 </span></span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-comment"> * @final
 </span></span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-comment"> * @package     UpworkAPI
-</span></span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment"> * @since       05/19/2014
-</span></span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-comment"> * @copyright   Copyright 2014(c) Upwork.com
+</span></span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment"> * @since       07/14/2015
+</span></span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-comment"> * @copyright   Copyright 2015(c) Upwork.com
 </span></span><span id="10" class="l"><a class="l" href="#10">10: </a><span class="php-comment"> * @author      Maksym Novozhylov &lt;mnovozhilov@upwork.com&gt;
 </span></span><span id="11" class="l"><a class="l" href="#11">11: </a><span class="php-comment"> * @license     Upwork's API Terms of Use {@link https://developers.upwork.com/api-tos.html}
 </span></span><span id="12" class="l"><a class="l" href="#12">12: </a><span class="php-comment"> */</span>
@@ -132,11 +132,11 @@
 </span><span id="17" class="l"><a class="l" href="#17">17: </a><span class="php-keyword1">use</span> Upwork\API\Client <span class="php-keyword1">as</span> ApiClient;
 </span><span id="18" class="l"><a class="l" href="#18">18: </a>
 </span><span id="19" class="l"><a class="l" href="#19">19: </a><span class="php-comment">/**
-</span></span><span id="20" class="l"><a class="l" href="#20">20: </a><span class="php-comment"> * Workdiary API
+</span></span><span id="20" class="l"><a class="l" href="#20">20: </a><span class="php-comment"> * Workdays API
 </span></span><span id="21" class="l"><a class="l" href="#21">21: </a><span class="php-comment"> *
-</span></span><span id="22" class="l"><a class="l" href="#22">22: </a><span class="php-comment"> * @link http://developers.upwork.com/Work-Diary
+</span></span><span id="22" class="l"><a class="l" href="#22">22: </a><span class="php-comment"> * @link http://developers.upwork.com/#companies-and-teams_get-workdays-by-company
 </span></span><span id="23" class="l"><a class="l" href="#23">23: </a><span class="php-comment"> */</span>
-</span><span id="24" class="l"><a class="l" href="#24">24: </a><span class="php-keyword1">final</span> <span class="php-keyword1">class</span> <a id="Workdiary" href="#Workdiary">Workdiary</a> <span class="php-keyword1">extends</span> ApiClient
+</span><span id="24" class="l"><a class="l" href="#24">24: </a><span class="php-keyword1">final</span> <span class="php-keyword1">class</span> <a id="Workdays" href="#Workdays">Workdays</a> <span class="php-keyword1">extends</span> ApiClient
 </span><span id="25" class="l"><a class="l" href="#25">25: </a>{
 </span><span id="26" class="l"><a class="l" href="#26">26: </a>    <span class="php-keyword1">const</span> <a id="ENTRY_POINT" href="#ENTRY_POINT">ENTRY_POINT</a> = UPWORK_API_EP_NAME;
 </span><span id="27" class="l"><a class="l" href="#27">27: </a>
@@ -158,19 +158,19 @@
 </span><span id="43" class="l"><a class="l" href="#43">43: </a>    }
 </span><span id="44" class="l"><a class="l" href="#44">44: </a>
 </span><span id="45" class="l"><a class="l" href="#45">45: </a>    <span class="php-comment">/**
-</span></span><span id="46" class="l"><a class="l" href="#46">46: </a><span class="php-comment">     * Get Workdiary
+</span></span><span id="46" class="l"><a class="l" href="#46">46: </a><span class="php-comment">     * Get Workdays
 </span></span><span id="47" class="l"><a class="l" href="#47">47: </a><span class="php-comment">     *
 </span></span><span id="48" class="l"><a class="l" href="#48">48: </a><span class="php-comment">     * @param   string $company Company ID
-</span></span><span id="49" class="l"><a class="l" href="#49">49: </a><span class="php-comment">     * @param   string $username User ID
-</span></span><span id="50" class="l"><a class="l" href="#50">50: </a><span class="php-comment">     * @param   string $date Date
+</span></span><span id="49" class="l"><a class="l" href="#49">49: </a><span class="php-comment">     * @param   string $fromDate Start date
+</span></span><span id="50" class="l"><a class="l" href="#50">50: </a><span class="php-comment">     * @param   string $tillDate Till date
 </span></span><span id="51" class="l"><a class="l" href="#51">51: </a><span class="php-comment">     * @param   array $params (Optional) Parameters
 </span></span><span id="52" class="l"><a class="l" href="#52">52: </a><span class="php-comment">     * @return  object
 </span></span><span id="53" class="l"><a class="l" href="#53">53: </a><span class="php-comment">     */</span>
-</span><span id="54" class="l"><a class="l" href="#54">54: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_get" href="#_get">get</a>(<span class="php-var">$company</span>, <span class="php-var">$username</span>, <span class="php-var">$date</span>, <span class="php-var">$params</span> = <span class="php-keyword1">array</span>())
+</span><span id="54" class="l"><a class="l" href="#54">54: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getByCompany" href="#_getByCompany">getByCompany</a>(<span class="php-var">$company</span>, <span class="php-var">$fromDate</span>, <span class="php-var">$tillDate</span>, <span class="php-var">$params</span> = <span class="php-keyword1">array</span>())
 </span><span id="55" class="l"><a class="l" href="#55">55: </a>    {
 </span><span id="56" class="l"><a class="l" href="#56">56: </a>        ApiDebug::p(__FUNCTION__);
 </span><span id="57" class="l"><a class="l" href="#57">57: </a>
-</span><span id="58" class="l"><a class="l" href="#58">58: </a>        <span class="php-var">$response</span> = <span class="php-var">$this</span>-&gt;_client-&gt;get(<span class="php-quote">'/team/v1/workdiaries/'</span> . <span class="php-var">$company</span> . <span class="php-quote">'/'</span> . <span class="php-var">$username</span> . <span class="php-quote">'/'</span> . <span class="php-var">$date</span>, <span class="php-var">$params</span>);
+</span><span id="58" class="l"><a class="l" href="#58">58: </a>        <span class="php-var">$response</span> = <span class="php-var">$this</span>-&gt;_client-&gt;get(<span class="php-quote">'/team/v2/workdays/companies/'</span> . <span class="php-var">$company</span> . <span class="php-quote">'/'</span> . <span class="php-var">$fromDate</span> . <span class="php-quote">','</span> . <span class="php-var">$tillDate</span>, <span class="php-var">$params</span>);
 </span><span id="59" class="l"><a class="l" href="#59">59: </a>        ApiDebug::p(<span class="php-quote">'found response info'</span>, <span class="php-var">$response</span>);
 </span><span id="60" class="l"><a class="l" href="#60">60: </a>
 </span><span id="61" class="l"><a class="l" href="#61">61: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>;
@@ -180,21 +180,22 @@
 </span></span><span id="65" class="l"><a class="l" href="#65">65: </a><span class="php-comment">     * Get Workdiary by Contract
 </span></span><span id="66" class="l"><a class="l" href="#66">66: </a><span class="php-comment">     *
 </span></span><span id="67" class="l"><a class="l" href="#67">67: </a><span class="php-comment">     * @param   string $contract Contract ID
-</span></span><span id="68" class="l"><a class="l" href="#68">68: </a><span class="php-comment">     * @param   string $date Date
-</span></span><span id="69" class="l"><a class="l" href="#69">69: </a><span class="php-comment">     * @param   array $params (Optional) Parameters
-</span></span><span id="70" class="l"><a class="l" href="#70">70: </a><span class="php-comment">     * @return  object
-</span></span><span id="71" class="l"><a class="l" href="#71">71: </a><span class="php-comment">     */</span>
-</span><span id="72" class="l"><a class="l" href="#72">72: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getByContract" href="#_getByContract">getByContract</a>(<span class="php-var">$contract</span>, <span class="php-var">$date</span>, <span class="php-var">$params</span> = <span class="php-keyword1">array</span>())
-</span><span id="73" class="l"><a class="l" href="#73">73: </a>    {
-</span><span id="74" class="l"><a class="l" href="#74">74: </a>        ApiDebug::p(__FUNCTION__);
-</span><span id="75" class="l"><a class="l" href="#75">75: </a>
-</span><span id="76" class="l"><a class="l" href="#76">76: </a>        <span class="php-var">$response</span> = <span class="php-var">$this</span>-&gt;_client-&gt;get(<span class="php-quote">'/team/v2/workdiaries/contracts/'</span> . <span class="php-var">$contract</span> . <span class="php-quote">'/'</span> . <span class="php-var">$date</span>, <span class="php-var">$params</span>);
-</span><span id="77" class="l"><a class="l" href="#77">77: </a>        ApiDebug::p(<span class="php-quote">'found response info'</span>, <span class="php-var">$response</span>);
-</span><span id="78" class="l"><a class="l" href="#78">78: </a>
-</span><span id="79" class="l"><a class="l" href="#79">79: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>;
-</span><span id="80" class="l"><a class="l" href="#80">80: </a>    }
-</span><span id="81" class="l"><a class="l" href="#81">81: </a>}
-</span><span id="82" class="l"><a class="l" href="#82">82: </a></span></code></pre>
+</span></span><span id="68" class="l"><a class="l" href="#68">68: </a><span class="php-comment">     * @param   string $fromDate Start date
+</span></span><span id="69" class="l"><a class="l" href="#69">69: </a><span class="php-comment">     * @param   string $tillDate Till date
+</span></span><span id="70" class="l"><a class="l" href="#70">70: </a><span class="php-comment">     * @param   array $params (Optional) Parameters
+</span></span><span id="71" class="l"><a class="l" href="#71">71: </a><span class="php-comment">     * @return  object
+</span></span><span id="72" class="l"><a class="l" href="#72">72: </a><span class="php-comment">     */</span>
+</span><span id="73" class="l"><a class="l" href="#73">73: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_getByContract" href="#_getByContract">getByContract</a>(<span class="php-var">$contract</span>, <span class="php-var">$fromDate</span>, <span class="php-var">$tillDate</span>, <span class="php-var">$params</span> = <span class="php-keyword1">array</span>())
+</span><span id="74" class="l"><a class="l" href="#74">74: </a>    {
+</span><span id="75" class="l"><a class="l" href="#75">75: </a>        ApiDebug::p(__FUNCTION__);
+</span><span id="76" class="l"><a class="l" href="#76">76: </a>
+</span><span id="77" class="l"><a class="l" href="#77">77: </a>        <span class="php-var">$response</span> = <span class="php-var">$this</span>-&gt;_client-&gt;get(<span class="php-quote">'/team/v2/workdays/contracts/'</span> . <span class="php-var">$company</span> . <span class="php-quote">'/'</span> . <span class="php-var">$fromDate</span> . <span class="php-quote">','</span> . <span class="php-var">$tillDate</span>, <span class="php-var">$params</span>);
+</span><span id="78" class="l"><a class="l" href="#78">78: </a>        ApiDebug::p(<span class="php-quote">'found response info'</span>, <span class="php-var">$response</span>);
+</span><span id="79" class="l"><a class="l" href="#79">79: </a>
+</span><span id="80" class="l"><a class="l" href="#80">80: </a>        <span class="php-keyword1">return</span> <span class="php-var">$response</span>;
+</span><span id="81" class="l"><a class="l" href="#81">81: </a>    }
+</span><span id="82" class="l"><a class="l" href="#82">82: </a>}
+</span><span id="83" class="l"><a class="l" href="#83">83: </a></span></code></pre>
 
 	<div id="footer">
 		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
