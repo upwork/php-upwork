@@ -52,7 +52,7 @@ final class Engagement extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/tasks/v2/tasks/contracts/' . $engagement_ref);
+        $response = $this->_client->get('/tasks/v2/tasks/contracts/' . $engagementRef);
         ApiDebug::p('found response info', $response);
 
         return $response;
