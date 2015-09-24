@@ -76,4 +76,21 @@ final class Engagement extends ApiClient
 
         return $response;
     }
+
+    /**
+     * Assign to specific engagement the list of activities
+     *
+     * @param   integer $engagement Engagement
+     * @param   array   $params Parameters
+     * @return  object
+     */
+    public function assignToEngagement($engagement, $params)
+    {
+        ApiDebug::p(__FUNCTION__);
+
+        $response = $this->_client->put('/tasks/v2/tasks/contracts/' . $engagement, $params);
+        ApiDebug::p('found response info', $response);
+
+        return $response;
+    }
 }
