@@ -36,4 +36,15 @@ class EngagementTest extends CommonTestRouter
         
         $this->_checkResponse($response);
     }
+
+    /**
+     * @test
+     */
+    public function testAssignToEngagement()
+    {
+        $router = new \Upwork\API\Routers\Activities\Engagement($this->_client);
+        $response = $router->assignToEngagement('1234', array());
+        
+        $this->_checkResponse($response);
+    }
 }

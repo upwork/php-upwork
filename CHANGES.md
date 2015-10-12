@@ -1,5 +1,9 @@
 # Release History
 
+## 1.1.0
+* Get Categories (V1) is now fully depricated
+* Added new Activities API - Assign to specific engagement the list of activities
+
 ## 1.0.1
 * Added new Workdays API - Get Workdays by Comppany
 * Added new Workdays API - Get Workdays by Contract

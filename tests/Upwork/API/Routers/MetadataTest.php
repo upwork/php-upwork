@@ -16,17 +16,6 @@ class MetadataTest extends CommonTestRouter
     /**
      * @test
      */
-    public function testGetCategories()
-    {
-        $router = new \Upwork\API\Routers\Metadata($this->_client);
-        $response = $router->getCategories();
-        
-        $this->_checkResponse($response);
-    }
-
-    /**
-     * @test
-     */
     public function testGetCategoriesV2()
     {
         $router = new \Upwork\API\Routers\Metadata($this->_client);
