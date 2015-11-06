@@ -91,7 +91,7 @@ Add `upwork/php-upwork` to your `composer.json`, simple example:
 {
     "name": "my/my-oauth-app",
     "require": {
-        "upwork/php-upwork": "v1.0.1" // note: the latest release is recommended
+        "upwork/php-upwork": "v1.1.0" // note: the latest release is recommended
     }
 }
 ```
@@ -103,7 +103,7 @@ the output should look similar to
 ```
 Loading composer repositories with package information
 Updating dependencies (including require-dev)
-  - Installing upwork/php-upwork (v1.0.1)
+  - Installing upwork/php-upwork (v1.1.0)
     Downloading: 100%         
 
 Writing lock file
@@ -141,19 +141,19 @@ open `myapp.php` and type the consumerKey and consumerSecret that you previously
 ## Installation by downloading sources
 1.
 Download latest release from https://github.com/upwork/php-upwork/releases, 
-let's say it is https://github.com/upwork/php-upwork/archive/v1.0.1.tar.gz, and
+let's say it is https://github.com/upwork/php-upwork/archive/v1.1.0.tar.gz, and
 extract it to `vendor/upwork` folder, located in the root directory of your application.
 
 2.
 Create vendor/autoload.php, a possible simple variant could be:
 ```
-require_once __DIR__ . '/upwork/php-upwork-1.0.1/src/Upwork/API/constants.php';
+require_once __DIR__ . '/upwork/php-upwork-1.1.0/src/Upwork/API/constants.php';
 
 spl_autoload_register('UpworkVendorAutoloader');
 
 function UpworkVendorAutoloader($_class)
 {
-    $path = __DIR__ . '/upwork/php-upwork-1.0.1/src/' . str_replace('\\', '/', $_class) . '.php';
+    $path = __DIR__ . '/upwork/php-upwork-1.1.0/src/' . str_replace('\\', '/', $_class) . '.php';
     include_once $path;
 }
 ```
