@@ -66,7 +66,8 @@ To integrate this library you need to have:
 In addition to this, a full example is available in the `example` directory. 
 This includes `console.php` that gets an access token and requests the data
 for applications that are not web-based, and `web.php` for web-based applications.
-There is also `console-own-auth-lib.php` available to use your own php client together with this Upwork library.
+You can also find the `console-own-auth-lib.php` file to use your own php client 
+together with this Upwork library.
 
 There is also a `composer.json` included to use with Composer.
 
@@ -74,7 +75,7 @@ There is also a `composer.json` included to use with Composer.
 In order to easily integrate with your application we recommend using
 [Composer](https://getcomposer.org) to install the dependencies.
 
-Below is a simple example `composer.json` file you can use:
+Below is a simple example of the `composer.json` file you can use:
 
     {
         "name": "upwork/my-oauth-app",
@@ -111,9 +112,9 @@ Generating autoload files
 
 3.
 IMPORTANT:
-The library supports different OAuth clients, by default it requires PECL PHP extension (see more at http://www.php.net/oauth). Make sure it is installed. In case you don't
-want to use it, or have no possibility to install it, you may want to use a preloaded
-php library, called oauth-php (read more in vendor-src/README).
+The library supports different OAuth clients, by default it requires PECL PHP extension (see more at http://www.php.net/oauth). 
+Make sure it is installed. In case you don't want to use it, or you don't have the possibility to install it, you can use 
+a preloaded php library, called oauth-php (read more in vendor-src/README).
 
 copy `vendor/upwork/php-upwork/example/console.php` to the `myapp.php` if you have
 `ext-oauth` installed
@@ -141,7 +142,7 @@ open `myapp.php` and type the consumerKey and consumerSecret that you previously
 1.
 Download latest release from https://github.com/upwork/php-upwork/releases, 
 let's say it is https://github.com/upwork/php-upwork/archive/v1.0.1.tar.gz, and
-extract it to `vendor/upwork` folder, located in the root of your application.
+extract it to `vendor/upwork` folder, located in the root directory of your application.
 
 2.
 Create vendor/autoload.php, a possible simple variant could be:
