@@ -1,5 +1,8 @@
 # Release History
 
+## 1.1.1
+* Add optional parameter to support pagination in getTrayByType
+
 ## 1.1.0
 * Get Categories (V1) is now fully depricated
 * Added new Activities API - Assign to specific engagement the list of activities

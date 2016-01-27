@@ -62,14 +62,15 @@ final class Mc extends ApiClient
      *
      * @param   string $username Username
      * @param   string $type Tray type/name
+     * @param   array $type List of parameters
      * @access  public
      * @return  object
      */
-    public function getTrayByType($username, $type)
+    public function getTrayByType($username, $type, $params = array())
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/mc/v1/trays/' . $username . '/' . $type);
+        $response = $this->_client->get('/mc/v1/trays/' . $username . '/' . $type, $params);
         ApiDebug::p('found tray', $response);
 
         return $response;
