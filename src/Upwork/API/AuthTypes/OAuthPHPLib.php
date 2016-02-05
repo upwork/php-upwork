@@ -53,7 +53,7 @@ final class OAuthPHPLib extends AbstractOAuth implements ApiClient
     {
         ApiDebug::p('running request from ' . __CLASS__);
 
-        $oauth = $this->_getOAuthInstance();
+        $this->_getOAuthInstance();
 
         $request = new \OAuthRequester(ApiUtils::getFullUrl($url, self::$_epoint), $type, $params);
         $data = $request->doRequest(0, self::_getCurlOptions());
@@ -73,7 +73,7 @@ final class OAuthPHPLib extends AbstractOAuth implements ApiClient
     {
         ApiDebug::p('query request token from server');
 
-        $oauth = $this->_getOAuthInstance();
+        $this->_getOAuthInstance();
         $requestTokenInfo = \OAuthRequester::requestRequestToken(
             self::$_apiKey,
             0,
@@ -107,7 +107,7 @@ final class OAuthPHPLib extends AbstractOAuth implements ApiClient
 
         $accessTokenInfo = array();
 
-        $oauth = $this->_getOAuthInstance();
+        $this->_getOAuthInstance();
         \OAuthRequester::requestAccessToken(
             self::$_apiKey,
             self::$_requestToken,

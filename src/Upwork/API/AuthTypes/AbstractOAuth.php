@@ -160,7 +160,7 @@ abstract class AbstractOAuth
                 // get access token
                 $this->_setupAccessToken($verifier);
             }
-        } elseif (self::$_accessToken == null && self::$_verifier !== null) {
+        } elseif (self::$_accessToken === null && self::$_verifier !== null) {
             // get access token, web-based callback
             $this->_setupAccessToken(self::$_verifier);
         } else {
