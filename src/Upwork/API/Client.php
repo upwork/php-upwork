@@ -149,7 +149,7 @@ class Client
 
         $response = $this->_server->request($method, $url, $params);
 
-        return json_decode($response);
+        return json_decode($response, true);
     }
 
     /**

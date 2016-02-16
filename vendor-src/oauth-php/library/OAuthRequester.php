@@ -410,6 +410,8 @@ class OAuthRequester extends OAuthRequestSigner
 				curl_setopt($ch, $k, $v);
 			}
 		}
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 		$txt = curl_exec($ch);
 		if ($txt === false) {
