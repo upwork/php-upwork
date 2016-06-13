@@ -42,16 +42,17 @@ final class Messages extends ApiClient
     }
 
     /**
-     * Retrive rooms information
+     * Retrieve rooms information
      *
+     * @param   array $params List of parameters
      * @access  public
      * @return  object
      */
-    public function getRooms($company)
+    public function getRooms($company, $params = array())
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/messages/v3/' . $company . '/rooms');
+        $response = $this->_client->get('/messages/v3/' . $company . '/rooms', $params);
         ApiDebug::p('received data', $response);
 
         return $response;
