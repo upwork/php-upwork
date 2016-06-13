@@ -21,7 +21,7 @@ These are the supported API resources:
 * Job and Freelancer Profile
 * Search Jobs and Freelancers
 * Organization
-* MC
+* Messages
 * Time and Financial Reporting
 * Metadata
 * Snapshot
