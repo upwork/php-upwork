@@ -35,24 +35,8 @@ $accessTokenInfo = $client->auth();
 // array('access_token' => ..., 'access_secret' => ...);
 // keeps the access token in a secure place
 
-// gets a list of trays for the authenticated user
-$mc = new \Upwork\API\Routers\Mc($client);
-$trays = $mc->getTrays();
-
-print_r($trays);
-
 // gets info of the authenticated user
 $auth = new \Upwork\API\Routers\Auth($client);
 $info = $auth->getUserInfo();
 
 print_r($info);
-
-// attempts to start a new message thread with wrong parameters
-// to test an error response from the server (the subject is missing)
-$params = array(
-    'recipients' => 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    'body' => 'this is a test message from Upwork Library'
-);
-$newThread = $mc->startNewThread('myuseruid', $params);
-
-print_r($newThread);
