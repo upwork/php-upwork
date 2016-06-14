@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Class Upwork\API\Routers\Activities\Team</title>
+	<title>Class Upwork\API\Routers\Messages</title>
 
 	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
 
@@ -46,7 +46,7 @@
 					</a>
 
 						<ul>
-				<li class="active">
+				<li>
 					<a href="namespace-Upwork.API.Routers.Activities.html">
 						Activities					</a>
 
@@ -104,8 +104,14 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-Upwork.API.Routers.Activities.Engagement.html">Engagement</a></li>
-				<li class="active"><a href="class-Upwork.API.Routers.Activities.Team.html">Team</a></li>
+				<li><a href="class-Upwork.API.Routers.Auth.html">Auth</a></li>
+				<li class="active"><a href="class-Upwork.API.Routers.Messages.html">Messages</a></li>
+				<li><a href="class-Upwork.API.Routers.Metadata.html">Metadata</a></li>
+				<li><a href="class-Upwork.API.Routers.Payments.html">Payments</a></li>
+				<li><a href="class-Upwork.API.Routers.Snapshot.html">Snapshot</a></li>
+				<li><a href="class-Upwork.API.Routers.Teams.html">Teams</a></li>
+				<li><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
+				<li><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
 			</ul>
 
 
@@ -132,7 +138,7 @@
 				<a href="index.html" title="Overview"><span>Overview</span></a>
 			</li>
 			<li>
-				<a href="namespace-Upwork.API.Routers.Activities.html" title="Summary of Upwork\API\Routers\Activities"><span>Namespace</span></a>
+				<a href="namespace-Upwork.API.Routers.html" title="Summary of Upwork\API\Routers"><span>Namespace</span></a>
 			</li>
 			<li class="active">
 <span>Class</span>			</li>
@@ -144,11 +150,11 @@
 	</div>
 
 <div id="content" class="class">
-	<h1>Class Team</h1>
+	<h1>Class Messages</h1>
 
 
 	<div class="description">
-	<p>Get an oTask/Activity records within a team</p>
+	<p>Messages</p>
 	</div>
 
 	<dl class="tree">
@@ -160,7 +166,7 @@
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by">
-<b><span>Upwork\API\Routers\Activities\Team</span></b>			
+<b><span>Upwork\API\Routers\Messages</span></b>			
 			
 			
 		</dd>
@@ -176,12 +182,12 @@
 	<div class="info">
 		<b>Final</b><br>
 		
-		<b>Namespace:</b> <a href="namespace-Upwork.html">Upwork</a>\<a href="namespace-Upwork.API.html">API</a>\<a href="namespace-Upwork.API.Routers.html">Routers</a>\<a href="namespace-Upwork.API.Routers.Activities.html">Activities</a><br>
+		<b>Namespace:</b> <a href="namespace-Upwork.html">Upwork</a>\<a href="namespace-Upwork.API.html">API</a>\<a href="namespace-Upwork.API.Routers.html">Routers</a><br>
 		
 
 				<b>Link:</b>
-				<a href="http://developers.upwork.com/oTasks-API">http://developers.upwork.com/oTasks-API</a><br>
-			<b>Located at</b> <a href="source-class-Upwork.API.Routers.Activities.Team.html#19-169" title="Go to source code">Upwork/API/Routers/Activities/Team.php</a>
+				<a href="https://developers.upwork.com/#messages-new">https://developers.upwork.com/#messages-new</a><br>
+			<b>Located at</b> <a href="source-class-Upwork.API.Routers.Messages.html#18-211" title="Go to source code">Upwork/API/Routers/Messages.php</a>
 		<br>
 	</div>
 
@@ -201,7 +207,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#33-43" title="Go to source code">__construct</a>( <span><code><a href="class-Upwork.API.Client.html">Upwork\API\Client</a></code> <var>$client</var></span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#32-42" title="Go to source code">__construct</a>( <span><code><a href="class-Upwork.API.Client.html">Upwork\API\Client</a></code> <var>$client</var></span> )</code>
 
 		<div class="description short">
 			<p>Constructor</p>
@@ -226,7 +232,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="getList" id="_getList">
+	<tr data-order="getRooms" id="_getRooms">
 
 		<td class="attributes"><code>
 			 public 
@@ -237,109 +243,23 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_getList">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#68-80" title="Go to source code">getList</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span> )</code>
+		<a class="anchor" href="#_getRooms">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#44-59" title="Go to source code">getRooms</a>( <span>array <var>$company</var></span>, <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			<p>List all oTask/Activity records within a Team</p>
+			<p>Retrieve rooms information</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>List all oTask/Activity records within a Team</p>
+			<p>Retrieve rooms information</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
-					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					object
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getSpecificList" id="_getSpecificList">
-
-		<td class="attributes"><code>
-			 public 
-
-			object
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getSpecificList">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#82-95" title="Go to source code">getSpecificList</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span>, <span>string <var>$code</var></span> )</code>
-
-		<div class="description short">
-			<p>List all oTask/Activity records within a Team by specified code(s)</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>List all oTask/Activity records within a Team by specified code(s)</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$company</var></dt>
-					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
-					<dt><var>$code</var></dt>
-					<dd>Specific code(s)</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					object
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="addActivity" id="_addActivity">
-
-		<td class="attributes"><code>
-			 public 
-
-			object
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_addActivity">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#97-113" title="Go to source code">addActivity</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span>, <span>array <var>$params</var></span> )</code>
-
-		<div class="description short">
-			<p>Create an oTask/Activity record within a Team</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Create an oTask/Activity record within a Team</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$company</var></dt>
-					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
+					<dd>$params List of parameters</dd>
 					<dt><var>$params</var></dt>
-					<dd>Parameters</dd>
+					<dd></dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -353,7 +273,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="updateActivity" id="_updateActivity">
+	<tr data-order="getRoomDetails" id="_getRoomDetails">
 
 		<td class="attributes"><code>
 			 public 
@@ -364,27 +284,23 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_updateActivity">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#115-132" title="Go to source code">updateActivity</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span>, <span>string <var>$code</var></span>, <span>array <var>$params</var></span> )</code>
+		<a class="anchor" href="#_getRoomDetails">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#61-77" title="Go to source code">getRoomDetails</a>( <span>string <var>$company</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			<p>Update specific oTask/Activity record within a Team</p>
+			<p>Get a specific room information</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Update specific oTask/Activity record within a Team</p>
+			<p>Get a specific room information</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
 					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
-					<dt><var>$code</var></dt>
-					<dd>Specific code</dd>
 					<dt><var>$params</var></dt>
-					<dd>Parameters</dd>
+					<dd>List of parameters</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -398,7 +314,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="archiveActivities" id="_archiveActivities">
+	<tr data-order="getRoomByOffer" id="_getRoomByOffer">
 
 		<td class="attributes"><code>
 			 public 
@@ -409,25 +325,25 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_archiveActivities">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#134-150" title="Go to source code">archiveActivities</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span>, <span>string <var>$code</var></span> )</code>
+		<a class="anchor" href="#_getRoomByOffer">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#79-96" title="Go to source code">getRoomByOffer</a>( <span>string <var>$company</var></span>, <span>integer <var>$offerId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			<p>Archive specific oTask/Activity record within a Team</p>
+			<p>Get a specific room by offer ID</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Archive specific oTask/Activity record within a Team</p>
+			<p>Get a specific room by offer ID</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
 					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
-					<dt><var>$code</var></dt>
-					<dd>Specific code(s)</dd>
+					<dt><var>$offerId</var></dt>
+					<dd>Offer ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -441,7 +357,7 @@
 		</div>
 		</div></td>
 	</tr>
-	<tr data-order="unarchiveActivities" id="_unarchiveActivities">
+	<tr data-order="getRoomByApplication" id="_getRoomByApplication">
 
 		<td class="attributes"><code>
 			 public 
@@ -452,25 +368,240 @@
 		</td>
 
 		<td class="name"><div>
-		<a class="anchor" href="#_unarchiveActivities">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Activities.Team.html#152-168" title="Go to source code">unarchiveActivities</a>( <span>string <var>$company</var></span>, <span>string <var>$team</var></span>, <span>string <var>$code</var></span> )</code>
+		<a class="anchor" href="#_getRoomByApplication">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#98-115" title="Go to source code">getRoomByApplication</a>( <span>string <var>$company</var></span>, <span>integer <var>$applicationId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
-			<p>Unarchive specific oTask/Activity record within a Team</p>
+			<p>Get a specific room by application ID</p>
 		</div>
 
 		<div class="description detailed hidden">
-			<p>Unarchive specific oTask/Activity record within a Team</p>
+			<p>Get a specific room by application ID</p>
 
 
 				<h4>Parameters</h4>
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
 					<dd>Company ID</dd>
-					<dt><var>$team</var></dt>
-					<dd>Team ID</dd>
-					<dt><var>$code</var></dt>
-					<dd>Specific code(s)</dd>
+					<dt><var>$applicationId</var></dt>
+					<dd>Application ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRoomByContract" id="_getRoomByContract">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRoomByContract">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#117-134" title="Go to source code">getRoomByContract</a>( <span>string <var>$company</var></span>, <span>integer <var>$contractId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Get a specific room by contract ID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get a specific room by contract ID</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$company</var></dt>
+					<dd>Company ID</dd>
+					<dt><var>$contractId</var></dt>
+					<dd>Contract ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createRoom" id="_createRoom">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createRoom">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#136-152" title="Go to source code">createRoom</a>( <span>string <var>$company</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Create a new room</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a new room</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$company</var></dt>
+					<dd>Company ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendMessageToRoom" id="_sendMessageToRoom">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendMessageToRoom">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#154-171" title="Go to source code">sendMessageToRoom</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Send a message to a room</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Send a message to a room</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$company</var></dt>
+					<dd>Company ID</dd>
+					<dt><var>$roomId</var></dt>
+					<dd>Room ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateRoomSettings" id="_updateRoomSettings">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateRoomSettings">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#173-191" title="Go to source code">updateRoomSettings</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>string <var>$username</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Update a room settings</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Update a room settings</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$company</var></dt>
+					<dd>Company ID</dd>
+					<dt><var>$roomId</var></dt>
+					<dd>Room ID</dd>
+					<dt><var>$username</var></dt>
+					<dd>User ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					object
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateRoomMetadata" id="_updateRoomMetadata">
+
+		<td class="attributes"><code>
+			 public 
+
+			object
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateRoomMetadata">#</a>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#193-210" title="Go to source code">updateRoomMetadata</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Update the metadata of a room</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Update the metadata of a room</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$company</var></dt>
+					<dd>Company ID</dd>
+					<dt><var>$roomId</var></dt>
+					<dd>Room ID</dd>
+					<dt><var>$params</var></dt>
+					<dd>List of parameters</dd>
 				</dl></div>
 
 				<h4>Returns</h4>
@@ -515,7 +646,7 @@
 		<td class="attributes"><code></code></td>
 		<td class="name">
 			<code>
-				<a href="source-class-Upwork.API.Routers.Activities.Team.html#26" title="Go to source code"><b>ENTRY_POINT</b></a>
+				<a href="source-class-Upwork.API.Routers.Messages.html#25" title="Go to source code"><b>ENTRY_POINT</b></a>
 			</code>
 
 			<div class="description short">
