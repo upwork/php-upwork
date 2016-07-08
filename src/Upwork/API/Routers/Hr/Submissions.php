@@ -86,7 +86,7 @@ final class Submissions extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->delete('/hr/v3/fp/submissions/' . $submissionId . '/reject', $params);
+        $response = $this->_client->put('/hr/v3/fp/submissions/' . $submissionId . '/reject', $params);
         ApiDebug::p('found response info', $response);
 
         return $response;
