@@ -187,7 +187,7 @@
 
 				<b>Link:</b>
 				<a href="https://developers.upwork.com/#messages-new">https://developers.upwork.com/#messages-new</a><br>
-			<b>Located at</b> <a href="source-class-Upwork.API.Routers.Messages.html#18-211" title="Go to source code">Upwork/API/Routers/Messages.php</a>
+			<b>Located at</b> <a href="source-class-Upwork.API.Routers.Messages.html#18-212" title="Go to source code">Upwork/API/Routers/Messages.php</a>
 		<br>
 	</div>
 
@@ -285,7 +285,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRoomDetails">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#61-77" title="Go to source code">getRoomDetails</a>( <span>string <var>$company</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#61-78" title="Go to source code">getRoomDetails</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Get a specific room information</p>
@@ -299,6 +299,8 @@
 				<div class="list"><dl>
 					<dt><var>$company</var></dt>
 					<dd>Company ID</dd>
+					<dt><var>$roomId</var></dt>
+					<dd>Room ID</dd>
 					<dt><var>$params</var></dt>
 					<dd>List of parameters</dd>
 				</dl></div>
@@ -326,7 +328,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRoomByOffer">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#79-96" title="Go to source code">getRoomByOffer</a>( <span>string <var>$company</var></span>, <span>integer <var>$offerId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#80-97" title="Go to source code">getRoomByOffer</a>( <span>string <var>$company</var></span>, <span>integer <var>$offerId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Get a specific room by offer ID</p>
@@ -369,7 +371,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRoomByApplication">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#98-115" title="Go to source code">getRoomByApplication</a>( <span>string <var>$company</var></span>, <span>integer <var>$applicationId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#99-116" title="Go to source code">getRoomByApplication</a>( <span>string <var>$company</var></span>, <span>integer <var>$applicationId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Get a specific room by application ID</p>
@@ -412,7 +414,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getRoomByContract">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#117-134" title="Go to source code">getRoomByContract</a>( <span>string <var>$company</var></span>, <span>integer <var>$contractId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#118-135" title="Go to source code">getRoomByContract</a>( <span>string <var>$company</var></span>, <span>integer <var>$contractId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Get a specific room by contract ID</p>
@@ -455,7 +457,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_createRoom">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#136-152" title="Go to source code">createRoom</a>( <span>string <var>$company</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#137-153" title="Go to source code">createRoom</a>( <span>string <var>$company</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Create a new room</p>
@@ -496,7 +498,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sendMessageToRoom">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#154-171" title="Go to source code">sendMessageToRoom</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#155-172" title="Go to source code">sendMessageToRoom</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Send a message to a room</p>
@@ -539,7 +541,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_updateRoomSettings">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#173-191" title="Go to source code">updateRoomSettings</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>string <var>$username</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#174-192" title="Go to source code">updateRoomSettings</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>string <var>$username</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Update a room settings</p>
@@ -584,7 +586,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_updateRoomMetadata">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Messages.html#193-210" title="Go to source code">updateRoomMetadata</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Upwork.API.Routers.Messages.html#194-211" title="Go to source code">updateRoomMetadata</a>( <span>string <var>$company</var></span>, <span>string <var>$roomId</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Update the metadata of a room</p>
