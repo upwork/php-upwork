@@ -165,7 +165,7 @@ final class Messages extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->post('/messages/v3/' . $company . '/rooms/' . $roomId . '/stories`', $params);
+        $response = $this->_client->post('/messages/v3/' . $company . '/rooms/' . $roomId . '/stories', $params);
         ApiDebug::p('received data', $response);
 
         return $response;

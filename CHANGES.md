@@ -1,5 +1,8 @@
 # Release History
 
+## 1.2.2
+* Fixed a typo in Send a Message to a Room API
+
 ## 1.2.1
 * Bug fixes in Messages and Submissions API
 
