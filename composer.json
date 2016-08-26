@@ -1,11 +1,11 @@
 {
     "name": "upwork/php-upwork",
     "description": "PHP bindings for Upwork API",
-    "version": "v1.2.1",
+    "version": "v1.2.2",
     "type": "library",
     "keywords": ["upwork", "php", "api"],
     "homepage": "http://www.upwork.com",
-    "time": "2016-07-08",
+    "time": "2016-08-26",
     "license": "Apache-2.0",
     "authors": [
         {
