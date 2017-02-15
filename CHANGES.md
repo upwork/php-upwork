@@ -1,5 +1,8 @@
 # Release History
 
+## 1.2.3
+* Applications API has moved from v3 to v4
+
 ## 1.2.2
 * Fixed a typo in Send a Message to a Room API
 
