@@ -52,7 +52,7 @@ final class Applications extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/hr/v3/contractors/applications', $params);
+        $response = $this->_client->get('/hr/v4/contractors/applications', $params);
         ApiDebug::p('found response info', $response);
 
         return $response;
@@ -68,7 +68,7 @@ final class Applications extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/hr/v3/contractors/applications/' . $reference);
+        $response = $this->_client->get('/hr/v4/contractors/applications/' . $reference);
         ApiDebug::p('found response info', $response);
 
         return $response;
