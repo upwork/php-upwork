@@ -26,7 +26,7 @@ These are the supported API resources:
 * Metadata
 * Snapshot
 * Team
-* Workd Diary
+* Work Diary
 * Activities
 
 # License
