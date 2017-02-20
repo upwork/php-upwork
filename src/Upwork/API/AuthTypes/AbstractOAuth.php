@@ -147,9 +147,9 @@ abstract class AbstractOAuth
                 // authorize nonweb application
                 ApiDebug::p('found [nonweb] mode, need to autorize application manually');
 
-                $prompt = 'Visit ' . $authUrl . "\n" .
-                    'and provide oauth_verifier for further authorization' . "\n" .
-                    '$ ';
+                echo 'Visit ' . $authUrl . "\n" .
+                    'and provide oauth_verifier for further authorization' . "\n";
+                $prompt = '$ ';
                 if (PHP_OS == 'WINNT') {
                     echo $prompt;
                     $verifier = stream_get_line(STDIN, 1024, PHP_EOL);
