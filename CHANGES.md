@@ -1,5 +1,9 @@
 # Release History
 
+## 1.2.4
+* fix a typo in the README
+* Readline ignores \n - add space between authorization URL and the second part of the promt
+
 ## 1.2.3
 * Applications API has moved from v3 to v4
 
