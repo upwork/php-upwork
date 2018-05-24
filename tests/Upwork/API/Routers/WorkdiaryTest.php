@@ -19,7 +19,7 @@ class WorkdiaryTest extends CommonTestRouter
     public function testGet()
     {
         $router = new \Upwork\API\Routers\Workdiary($this->_client);
-        $response = $router->get('company', 'username', '20140101', array());
+        $response = $router->get('company', '20140101', array());
         
         $this->_checkResponse($response);
     }
