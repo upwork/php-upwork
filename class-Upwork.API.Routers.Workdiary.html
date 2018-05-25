@@ -1,412 +1,332 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>Class Upwork\API\Routers\Workdiary</title>
+        <link rel="stylesheet" href="resources/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
 
-	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+        <title>
+            Class Upwork\API\Routers\Workdiary
+        </title>
+    </head>
 
-</head>
+    <body>
+<div id="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                Overview
+                            </a>
+                        </li>
 
-<body>
-<div id="left">
-	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+                            <li>
+                                <a href="classes.html">Classes</a>
+                            </li>
 
-
-		<div id="groups">
-				<h3>Namespaces</h3>
-			<ul>
-				<li class="active">
-					<a href="namespace-Upwork.html">
-						Upwork<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Upwork.API.html">
-						API<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.AuthTypes.html">
-						AuthTypes					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Interfaces.html">
-						Interfaces					</a>
-
-						</li>
-				<li class="active">
-					<a href="namespace-Upwork.API.Routers.html">
-						Routers<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Activities.html">
-						Activities					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Freelancers.html">
-						Freelancers					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.html">
-						Hr<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.Clients.html">
-						Clients					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.Freelancers.html">
-						Freelancers					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Jobs.html">
-						Jobs					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Organization.html">
-						Organization					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Reports.html">
-						Reports<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Reports.Finance.html">
-						Finance					</a>
-
-						</li>
-							</ul></li></ul></li></ul></li></ul></li>
-			</ul>
-		</div>
-
-		<hr>
-
-
-		<div id="elements">
-			<h3>Classes</h3>
-			<ul>
-				<li><a href="class-Upwork.API.Routers.Auth.html">Auth</a></li>
-				<li><a href="class-Upwork.API.Routers.Messages.html">Messages</a></li>
-				<li><a href="class-Upwork.API.Routers.Metadata.html">Metadata</a></li>
-				<li><a href="class-Upwork.API.Routers.Payments.html">Payments</a></li>
-				<li><a href="class-Upwork.API.Routers.Snapshot.html">Snapshot</a></li>
-				<li><a href="class-Upwork.API.Routers.Teams.html">Teams</a></li>
-				<li><a href="class-Upwork.API.Routers.Workdays.html">Workdays</a></li>
-				<li class="active"><a href="class-Upwork.API.Routers.Workdiary.html">Workdiary</a></li>
-			</ul>
+                            <li>
+                                <a href="interfaces.html">Interfaces</a>
+                            </li>
 
 
 
+                            <li>
+                                <a href="exceptions.html">Exceptions</a>
+                            </li>
+
+                    </ul>
+
+                    <form id="search" class="pull-right">
+                        <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
 
 
-		</div>
-	</div>
+<div class="pull-left type">
+    <span class="label label-success">Class</span>
 </div>
 
-<div id="splitter"></div>
+<ol class="breadcrumb pull-left">
+        <li>
+            <a href="namespace-Upwork.html">Upwork</a>
+        </li>
+            <li class="backslash">\</li>
+        <li>
+            <a href="namespace-Upwork.API.html">API</a>
+        </li>
+            <li class="backslash">\</li>
+        <li>
+            <a href="namespace-Upwork.API.Routers.html">Routers</a>
+        </li>
 
-<div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="">
-		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text" placeholder="Search">
-	</form>
+        <li class="backslash">\</li>
+        <li class="active">Workdiary</li>
+</ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="namespace-Upwork.API.Routers.html" title="Summary of Upwork\API\Routers"><span>Namespace</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-		</ul>
-		<ul>
-		</ul>
-	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h1>Workdiary</h1>
 
-<div id="content" class="class">
-	<h1>Class Workdiary</h1>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Workdiary API
+            </div>
+        </div>
 
+        <dl class="tree">
+            <dd>
+                    extends
+                    <a href="class-Upwork.API.Client.html">
+                        Upwork\API\Client
+                    </a>
 
-	<div class="description">
-	<p>Workdiary API</p>
-	</div>
 
-	<dl class="tree">
-		<dd style="padding-left:0px">
-			<a href="class-Upwork.API.Client.html"><span>Upwork\API\Client</span></a>
-			
-			
-			
-		</dd>
-		<dd style="padding-left:30px">
-			<img src="resources/inherit.png" alt="Extended by">
-<b><span>Upwork\API\Routers\Workdiary</span></b>			
-			
-			
-		</dd>
-	</dl>
+            </dd>
+        </dl>
 
 
 
+    <div class="info">
+        <strong>Final</strong><br>
 
+            <a href="http://developers.upwork.com/Work-Diary">http://developers.upwork.com/Work-Diary</a><br>
+            <a href="source-class-Upwork.API.Routers.Workdiary.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
 
+        <table class="summary table table-bordered table-responsive table-striped" id="methods">
+            <tr><th colspan="3">Methods Summary</th></tr>
 
 
 
-	<div class="info">
-		<b>Final</b><br>
-		
-		<b>Namespace:</b> <a href="namespace-Upwork.html">Upwork</a>\<a href="namespace-Upwork.API.html">API</a>\<a href="namespace-Upwork.API.Routers.html">Routers</a><br>
-		
+<tr id="___construct">
 
-				<b>Link:</b>
-				<a href="http://developers.upwork.com/Work-Diary">http://developers.upwork.com/Work-Diary</a><br>
-			<b>Located at</b> <a href="source-class-Upwork.API.Routers.Workdiary.html#19-81" title="Go to source code">Upwork/API/Routers/Workdiary.php</a>
-		<br>
-	</div>
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
 
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#___construct">#</a>
+            <code><a href="source-class-Upwork.API.Routers.Workdiary.html#38-43">__construct</a>( <span> <a href="class-Upwork.API.Client.html">Upwork\API\Client</a> <span class="property-name">$client</span> </span> )</code>
 
+            <div class="description">
+                Constructor
 
-	<table class="summary methods" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
 
-			
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#33-43" title="Go to source code">__construct</a>( <span><code><a href="class-Upwork.API.Client.html">Upwork\API\Client</a></code> <var>$client</var></span> )</code>
 
-		<div class="description short">
-			<p>Constructor</p>
-		</div>
 
-		<div class="description detailed hidden">
-			<p>Constructor</p>
 
+                        <h2>Overrides</h2>
+                        <div>
+                            <code>
+                                <a href="class-Upwork.API.Client.html#___construct">
+                                    Upwork\API\Client::__construct()
+                                </a>
+                            </code>
+                        </div>
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$client</var></dt>
-					<dd>Client object</dd>
-				</dl></div>
+            </div>
+        </div>
+    </td>
+</tr>
 
 
 
+<tr id="_get">
 
-				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Upwork.API.Client.html#___construct">Upwork\API\Client::__construct()</a></code></div>
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get" id="_get">
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_get">#</a>
+            <code><a href="source-class-Upwork.API.Routers.Workdiary.html#53-61">get</a>( <span> string <span class="property-name">$company</span> </span>, <span> string <span class="property-name">$date</span> </span>, <span> array <span class="property-name">$params</span> = <span class="php-keyword1">array</span> ( )</span> )</code>
 
-		<td class="attributes"><code>
-			 public 
+            <div class="description">
+                Get Workdiary
 
-			object
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#45-62" title="Go to source code">get</a>( <span>string <var>$company</var></span>, <span>string <var>$username</var></span>, <span>string <var>$date</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
-
-		<div class="description short">
-			<p>Get Workdiary</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Get Workdiary</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$company</var></dt>
-					<dd>Company ID</dd>
-					<dt><var>$username</var></dt>
-					<dd>User ID</dd>
-					<dt><var>$date</var></dt>
-					<dd>Date</dd>
-					<dt><var>$params</var></dt>
-					<dd>(Optional) Parameters</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					object
-				</div>
-
-
-
-				<h4>Overrides</h4>
-				<div class="list"><code><a href="class-Upwork.API.Client.html#_get">Upwork\API\Client::get()</a></code></div>
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getByContract" id="_getByContract">
-
-		<td class="attributes"><code>
-			 public 
-
-			object
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_getByContract">#</a>
-		<code><a href="source-class-Upwork.API.Routers.Workdiary.html#64-80" title="Go to source code">getByContract</a>( <span>string <var>$contract</var></span>, <span>string <var>$date</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
-
-		<div class="description short">
-			<p>Get Workdiary by Contract</p>
-		</div>
-
-		<div class="description detailed hidden">
-			<p>Get Workdiary by Contract</p>
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$contract</var></dt>
-					<dd>Contract ID</dd>
-					<dt><var>$date</var></dt>
-					<dd>Date</dd>
-					<dt><var>$params</var></dt>
-					<dd>(Optional) Parameters</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					object
-				</div>
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-Upwork.API.Client.html#methods">Upwork\API\Client</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Upwork.API.Client.html#__request">_request()</a>, 
-			<a href="class-Upwork.API.Client.html#_auth">auth()</a>, 
-			<a href="class-Upwork.API.Client.html#_delete">delete()</a>, 
-			<a href="class-Upwork.API.Client.html#_getRequestToken">getRequestToken()</a>, 
-			<a href="class-Upwork.API.Client.html#_getServer">getServer()</a>, 
-			<a href="class-Upwork.API.Client.html#_post">post()</a>, 
-			<a href="class-Upwork.API.Client.html#_put">put()</a>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-
-	<table class="summary constants" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="ENTRY_POINT" id="ENTRY_POINT">
-
-		<td class="attributes"><code></code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Upwork.API.Routers.Workdiary.html#26" title="Go to source code"><b>ENTRY_POINT</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#ENTRY_POINT" class="anchor">#</a>
-				<code>UPWORK_API_EP_NAME</code>
-			</div>
-		</td>
-	</tr>
-	</table>
-
-	<table class="summary inherited">
-	<caption>Constants inherited from <a href="class-Upwork.API.Client.html#constants">Upwork\API\Client</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Upwork.API.Client.html#DATA_FORMAT"><b>DATA_FORMAT</b></a>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-Upwork.API.Client.html#properties">Upwork\API\Client</a></caption>
-	<tr>
-		<td><code>
-			<a href="class-Upwork.API.Client.html#$_epoint"><var>$_epoint</var></a>, 
-			<a href="class-Upwork.API.Client.html#$_server"><var>$_server</var></a>
-		</code></td>
-	</tr>
-	</table>
-
-
-
-
-
-</div>
-
-	<div id="footer">
-		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
-	</div>
-</div>
-</div>
-<script src="resources/combined.js"></script>
-<script src="elementlist.js"></script>
-</body>
+
+
+
+
+
+                        <h2>Overrides</h2>
+                        <div>
+                            <code>
+                                <a href="class-Upwork.API.Client.html#_get">
+                                    Upwork\API\Client::get()
+                                </a>
+                            </code>
+                        </div>
+
+            </div>
+        </div>
+    </td>
+</tr>
+
+
+
+<tr id="_getByContract">
+
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
+
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_getByContract">#</a>
+            <code><a href="source-class-Upwork.API.Routers.Workdiary.html#71-79">getByContract</a>( <span> string <span class="property-name">$contract</span> </span>, <span> string <span class="property-name">$date</span> </span>, <span> array <span class="property-name">$params</span> = <span class="php-keyword1">array</span> ( )</span> )</code>
+
+            <div class="description">
+                Get Workdiary by Contract
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </td>
+</tr>
+        </table>
+
+        <table class="summary table table-bordered table-responsive table-striped">
+            <tr>
+                <th>
+                    Methods inherited from <a href="class-Upwork.API.Client.html#methods">Upwork\API\Client</a>
+                </th>
+            </tr>
+            <tr>
+                <td>
+                        <code><a href="class-Upwork.API.Client.html#___construct">__construct()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_getServer">getServer()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_getRequestToken">getRequestToken()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_auth">auth()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#__request">_request()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_get">get()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_post">post()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_put">put()</a></code>, 
+                        <code><a href="class-Upwork.API.Client.html#_delete">delete()</a></code>
+                </td>
+            </tr>
+        </table>
+
+
+        <table class="summary table table-bordered table-responsive table-striped" id="constants">
+            <tr><th colspan="3">Constants Summary</th></tr>
+<tr id="ENTRY_POINT">
+    <td class="attributes">
+        <code class="keyword">
+        public
+        
+        
+        string
+        </code>
+    </td>
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.Routers.Workdiary.html#26" class="constant-name">ENTRY_POINT</a>
+        </code>
+
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#ENTRY_POINT" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'api'</span></code>
+        </div>
+    </td>
+</tr>
+        </table>
+
+            <table class="summary table table-bordered table-responsive table-striped">
+                <tr>
+                    <th>
+                        Constants inherited from <a href="class-Upwork.API.Client.html#constants">Upwork\API\Client</a>
+                    </th>
+                </tr>
+                <tr>
+<td>
+    <code class="keyword">
+            <a href="class-Upwork.API.Client.html#DATA_FORMAT" class="constant-name">
+                DATA_FORMAT
+            </a>
+    </code>
+</td>
+                </tr>
+            </table>
+
+
+            <table class="summary table table-bordered table-responsive table-striped">
+                <tr>
+                    <th>
+                        Properties inherited from <a href="class-Upwork.API.Client.html#properties">Upwork\API\Client</a>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                            <code><a href="class-Upwork.API.Client.html#$_epoint" class="property-name">$_epoint</a></code>, 
+                            <code><a href="class-Upwork.API.Client.html#$_server" class="property-name">$_server</a></code>
+                    </td>
+                </tr>
+            </table>
+
+    <div id="footer">
+        Generated by <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
 </html>
+
+

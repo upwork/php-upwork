@@ -1,758 +1,675 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
 
-	<title>Class Upwork\API\AuthTypes\AbstractOAuth</title>
+        <link rel="stylesheet" href="resources/bootstrap.min.css">
+        <link rel="stylesheet" href="resources/style.css">
 
-	<link rel="stylesheet" href="resources/style.css?c2f33731c1948fbed7c333554678bfa68d4817da">
+        <title>
+            Class Upwork\API\AuthTypes\AbstractOAuth
+        </title>
+    </head>
 
-</head>
+    <body>
+<div id="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html">
+                                Overview
+                            </a>
+                        </li>
 
-<body>
-<div id="left">
-	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+                            <li>
+                                <a href="classes.html">Classes</a>
+                            </li>
 
-
-		<div id="groups">
-				<h3>Namespaces</h3>
-			<ul>
-				<li class="active">
-					<a href="namespace-Upwork.html">
-						Upwork<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Upwork.API.html">
-						API<span></span>
-					</a>
-
-						<ul>
-				<li class="active">
-					<a href="namespace-Upwork.API.AuthTypes.html">
-						AuthTypes					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Interfaces.html">
-						Interfaces					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.html">
-						Routers<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Activities.html">
-						Activities					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Freelancers.html">
-						Freelancers					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.html">
-						Hr<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.Clients.html">
-						Clients					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Hr.Freelancers.html">
-						Freelancers					</a>
-
-						</li>
-							</ul></li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Jobs.html">
-						Jobs					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Organization.html">
-						Organization					</a>
-
-						</li>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Reports.html">
-						Reports<span></span>
-					</a>
-
-						<ul>
-				<li>
-					<a href="namespace-Upwork.API.Routers.Reports.Finance.html">
-						Finance					</a>
-
-						</li>
-							</ul></li></ul></li></ul></li></ul></li>
-			</ul>
-		</div>
-
-		<hr>
-
-
-		<div id="elements">
-			<h3>Classes</h3>
-			<ul>
-				<li class="active"><a href="class-Upwork.API.AuthTypes.AbstractOAuth.html">AbstractOAuth</a></li>
-				<li><a href="class-Upwork.API.AuthTypes.OAuth1.html">OAuth1</a></li>
-				<li><a href="class-Upwork.API.AuthTypes.OAuthPHPLib.html">OAuthPHPLib</a></li>
-			</ul>
+                            <li>
+                                <a href="interfaces.html">Interfaces</a>
+                            </li>
 
 
 
+                            <li>
+                                <a href="exceptions.html">Exceptions</a>
+                            </li>
+
+                    </ul>
+
+                    <form id="search" class="pull-right">
+                        <input type="text" name="q" class="form-control text" placeholder="Search class, function or namespace" autofocus>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+            <div id="breadcrumbs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
 
 
-		</div>
-	</div>
+<div class="pull-left type">
+    <span class="label label-success">Class</span>
 </div>
 
-<div id="splitter"></div>
+<ol class="breadcrumb pull-left">
+        <li>
+            <a href="namespace-Upwork.html">Upwork</a>
+        </li>
+            <li class="backslash">\</li>
+        <li>
+            <a href="namespace-Upwork.API.html">API</a>
+        </li>
+            <li class="backslash">\</li>
+        <li>
+            <a href="namespace-Upwork.API.AuthTypes.html">AuthTypes</a>
+        </li>
 
-<div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="">
-		<input type="hidden" name="ie" value="UTF-8">
-		<input type="text" name="q" class="text" placeholder="Search">
-	</form>
+        <li class="backslash">\</li>
+        <li class="active">AbstractOAuth</li>
+</ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="namespace-Upwork.API.AuthTypes.html" title="Summary of Upwork\API\AuthTypes"><span>Namespace</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-		</ul>
-		<ul>
-		</ul>
-	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+    <h1>AbstractOAuth</h1>
 
-<div id="content" class="class">
-	<h1>Class AbstractOAuth</h1>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Abstract OAuth Client
+            </div>
+        </div>
 
 
-	<div class="description">
-	<p>Abstract OAuth Client</p>
-	</div>
 
+        <div>
+            <h2>Known subclasses</h2>
+            <a href="class-Upwork.API.AuthTypes.OAuth1.html">Upwork\API\AuthTypes\OAuth1</a>, 
+            <a href="class-Upwork.API.AuthTypes.OAuthPHPLib.html">Upwork\API\AuthTypes\OAuthPHPLib</a>
+        </div>
 
+    <div class="info">
+        <strong>Abstract</strong><br>
 
-	<div>
-		<h4>Direct known subclasses</h4>
-			<a href="class-Upwork.API.AuthTypes.OAuth1.html">Upwork\API\AuthTypes\OAuth1</a>, 
-			<a href="class-Upwork.API.AuthTypes.OAuthPHPLib.html">Upwork\API\AuthTypes\OAuthPHPLib</a>
-	</div>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html" class="open-source-code">Open source code</a>
+        <br>
+    </div>
 
+        <table class="summary table table-bordered table-responsive table-striped" id="methods">
+            <tr><th colspan="3">Methods Summary</th></tr>
 
 
 
+<tr id="___construct">
 
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
 
-	<div class="info">
-		<b>Abstract</b><br>
-		
-		<b>Namespace:</b> <a href="namespace-Upwork.html">Upwork</a>\<a href="namespace-Upwork.API.html">API</a>\<a href="namespace-Upwork.API.AuthTypes.html">AuthTypes</a><br>
-		
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#___construct">#</a>
+            <code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#84-99">__construct</a>( <span> string <span class="property-name">$key</span> </span>, <span> string <span class="property-name">$secret</span> </span> )</code>
 
-			<b>Located at</b> <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#21-193" title="Go to source code">Upwork/API/AuthTypes/AbstractOAuth.php</a>
-		<br>
-	</div>
+            <div class="description">
+                Constructor
 
 
 
-	<table class="summary methods" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
 
-			
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#76-99" title="Go to source code">__construct</a>( <span>string <var>$key</var></span>, <span>string <var>$secret</var></span> )</code>
+                    <h2>access</h2>
+                    <div class="list">
+                        <br>
+                    </div>
 
-		<div class="description short">
-			<p>Constructor</p>
-		</div>
 
-		<div class="description detailed hidden">
-			<p>Constructor</p>
+            </div>
+        </div>
+    </td>
+</tr>
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$key</var></dt>
-					<dd>Application key</dd>
-					<dt><var>$secret</var></dt>
-					<dd>Secret key</dd>
-				</dl></div>
 
+<tr id="_option">
 
-				<h4>Throws</h4>
-				<div class="list">
-					<code><a href="class-Upwork.API.ApiException.html">Upwork\API\ApiException</a></code><br>Wrong key or secret
-				</div>
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public static
+                
+                
+        </code>
+    </td>
 
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_option">#</a>
+            <code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#109-121">option</a>( <span> string <span class="property-name">$option</span> </span>, <span> mixed <span class="property-name">$value</span> </span> )</code>
 
+            <div class="description">
+                Set option
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="option" id="_option">
 
-		<td class="attributes"><code>
-			 public static
 
-			boolean
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_option">#</a>
-		<code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#101-121" title="Go to source code">option</a>( <span>string <var>$option</var></span>, <span>mixed <var>$value</var></span> )</code>
 
-		<div class="description short">
-			<p>Set option</p>
-		</div>
 
-		<div class="description detailed hidden">
-			<p>Set option</p>
+                    <h2>access</h2>
+                    <div class="list">
+                        <br>
+                    </div>
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$option</var></dt>
-					<dd>Option name</dd>
-					<dt><var>$value</var></dt>
-					<dd>Option value</dd>
-				</dl></div>
+            </div>
+        </div>
+    </td>
+</tr>
 
-				<h4>Returns</h4>
-				<div class="list">
-					boolean
-				</div>
 
 
+<tr id="_auth">
 
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                 public 
+                
+                
+        </code>
+    </td>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="auth" id="_auth">
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#_auth">#</a>
+            <code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#129-174">auth</a>( )</code>
 
-		<td class="attributes"><code>
-			 public 
+            <div class="description">
+                Auth process
 
-			string
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_auth">#</a>
-		<code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#123-174" title="Go to source code">auth</a>( )</code>
 
-		<div class="description short">
-			<p>Auth process</p>
-		</div>
 
-		<div class="description detailed hidden">
-			<p>Auth process</p>
 
 
+                    <h2>access</h2>
+                    <div class="list">
+                        <br>
+                    </div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					string
-				</div>
 
+            </div>
+        </div>
+    </td>
+</tr>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="_setupAccessToken" id="__setupAccessToken">
+<tr id="__setupAccessToken">
 
-		<td class="attributes"><code>
-			abstract protected 
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </td>
 
-			array
-			
-			</code>
-		</td>
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#__setupAccessToken">#</a>
+            <code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#183">_setupAccessToken</a>( <span> string <span class="property-name">$verifier</span> </span> )</code>
 
-		<td class="name"><div>
-		<a class="anchor" href="#__setupAccessToken">#</a>
-		<code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#176-183" title="Go to source code">_setupAccessToken</a>( <span>string <var>$verifier</var></span> )</code>
+            <div class="description">
+                Get access token
 
-		<div class="description short">
-			<p>Get access token</p>
-		</div>
 
-		<div class="description detailed hidden">
-			<p>Get access token</p>
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$verifier</var></dt>
-					<dd>OAuth verifier, got after authorization</dd>
-				</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					array
-				</div>
 
+                    <h2>access</h2>
+                    <div class="list">
+                        <br>
+                    </div>
 
 
+            </div>
+        </div>
+    </td>
+</tr>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="_getOAuthInstance" id="__getOAuthInstance">
 
-		<td class="attributes"><code>
-			abstract protected 
 
-			object
-			
-			</code>
-		</td>
+<tr id="__getOAuthInstance">
 
-		<td class="name"><div>
-		<a class="anchor" href="#__getOAuthInstance">#</a>
-		<code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#185-192" title="Go to source code">_getOAuthInstance</a>( <span>integer <var>$authType</var></span> )</code>
+    <td class="attributes col-md-1">
+        <code class="keyword">
+                abstract protected 
+                
+                
+        </code>
+    </td>
 
-		<div class="description short">
-			<p>Get OAuth instance</p>
-		</div>
+    <td class="name">
+        <div>
+            <a class="anchor pull-right" href="#__getOAuthInstance">#</a>
+            <code><a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#192">_getOAuthInstance</a>( <span> int <span class="property-name">$authType</span> </span> )</code>
 
-		<div class="description detailed hidden">
-			<p>Get OAuth instance</p>
+            <div class="description">
+                Get OAuth instance
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$authType</var></dt>
-					<dd>Auth type</dd>
-				</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					object
-				</div>
 
 
 
+                    <h2>access</h2>
+                    <div class="list">
+                        <br>
+                    </div>
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
 
+            </div>
+        </div>
+    </td>
+</tr>
+        </table>
 
 
 
+        <table class="summary table table-bordered table-responsive table-striped" id="constants">
+            <tr><th colspan="3">Constants Summary</th></tr>
+<tr id="URL_AUTH">
+    <td class="attributes">
+        <code class="keyword">
+        public
+        
+        
+        string
+        </code>
+    </td>
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#27" class="constant-name">URL_AUTH</a>
+        </code>
 
+        <div class="description">
+            
 
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#URL_AUTH" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'/services/api/auth'</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="URL_ATOKEN">
+    <td class="attributes">
+        <code class="keyword">
+        public
+        
+        
+        string
+        </code>
+    </td>
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#28" class="constant-name">URL_ATOKEN</a>
+        </code>
 
+        <div class="description">
+            
 
-	<table class="summary constants" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="URL_AUTH" id="URL_AUTH">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#27" title="Go to source code"><b>URL_AUTH</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#URL_AUTH" class="anchor">#</a>
-				<code><span class="php-quote">'/services/api/auth'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="URL_ATOKEN" id="URL_ATOKEN">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#28" title="Go to source code"><b>URL_ATOKEN</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#URL_ATOKEN" class="anchor">#</a>
-				<code><span class="php-quote">'/auth/v1/oauth/token/access'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="URL_RTOKEN" id="URL_RTOKEN">
-
-		<td class="attributes"><code>string</code></td>
-		<td class="name">
-			<code>
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#29" title="Go to source code"><b>URL_RTOKEN</b></a>
-			</code>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#URL_RTOKEN" class="anchor">#</a>
-				<code><span class="php-quote">'/auth/v1/oauth/token/request'</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
-
-
-
-
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="_apiKey" id="$_apiKey">
-		<td class="attributes"><code>
-			protected static 
-			Consumer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#31-34" title="Go to source code"><var>$_apiKey</var></a>
-
-			<div class="description short">
-				<p>key</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>key</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_apiKey" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_secret" id="$_secret">
-		<td class="attributes"><code>
-			protected static 
-			Consumer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#35-38" title="Go to source code"><var>$_secret</var></a>
-
-			<div class="description short">
-				<p>secret</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>secret</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_secret" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_requestToken" id="$_requestToken">
-		<td class="attributes"><code>
-			protected static 
-			oauth_token,
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#39-42" title="Go to source code"><var>$_requestToken</var></a>
-
-			<div class="description short">
-				<p>shared request token (temporary)</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>shared request token (temporary)</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_requestToken" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_requestSecret" id="$_requestSecret">
-		<td class="attributes"><code>
-			protected static 
-			oauth_token_secret
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#43-46" title="Go to source code"><var>$_requestSecret</var></a>
-
-			<div class="description short">
-				<p>(temporary)</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>(temporary)</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_requestSecret" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_accessToken" id="$_accessToken">
-		<td class="attributes"><code>
-			protected static 
-			Final
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#47-50" title="Go to source code"><var>$_accessToken</var></a>
-
-			<div class="description short">
-				<p>access token</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>access token</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_accessToken" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_accessSecret" id="$_accessSecret">
-		<td class="attributes"><code>
-			protected static 
-			Final
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#51-54" title="Go to source code"><var>$_accessSecret</var></a>
-
-			<div class="description short">
-				<p>access token secret</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>access token secret</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_accessSecret" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_verifier" id="$_verifier">
-		<td class="attributes"><code>
-			protected static 
-			OAuth
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#55-58" title="Go to source code"><var>$_verifier</var></a>
-
-			<div class="description short">
-				<p>verifier</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>verifier</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_verifier" class="anchor">#</a>
-				<code><span class="php-keyword1">null</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_epoint" id="$_epoint">
-		<td class="attributes"><code>
-			protected static 
-			Entry
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#59-62" title="Go to source code"><var>$_epoint</var></a>
-
-			<div class="description short">
-				<p>point name</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>point name</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_epoint" class="anchor">#</a>
-				<code><span class="php-quote">'api'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_mode" id="$_mode">
-		<td class="attributes"><code>
-			protected static 
-			Application
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#63-66" title="Go to source code"><var>$_mode</var></a>
-
-			<div class="description short">
-				<p>mode</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>mode</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_mode" class="anchor">#</a>
-				<code><span class="php-quote">'web'</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_verifySsl" id="$_verifySsl">
-		<td class="attributes"><code>
-			protected static 
-			SSL
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#67-70" title="Go to source code"><var>$_verifySsl</var></a>
-
-			<div class="description short">
-				<p>verification flag</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>verification flag</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_verifySsl" class="anchor">#</a>
-				<code><span class="php-keyword1">true</span></code>
-			</div>
-		</td>
-	</tr>
-	<tr data-order="_sigMethod" id="$_sigMethod">
-		<td class="attributes"><code>
-			protected static 
-			Signature
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#71-74" title="Go to source code"><var>$_sigMethod</var></a>
-
-			<div class="description short">
-				<p>method</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>method</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$_sigMethod" class="anchor">#</a>
-				<code><span class="php-quote">'HMAC-SHA1'</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
-
-
-
-
-
-
-</div>
-
-	<div id="footer">
-		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
-	</div>
-</div>
-</div>
-<script src="resources/combined.js"></script>
-<script src="elementlist.js"></script>
-</body>
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#URL_ATOKEN" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'/auth/v1/oauth/token/access'</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="URL_RTOKEN">
+    <td class="attributes">
+        <code class="keyword">
+        public
+        
+        
+        string
+        </code>
+    </td>
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#29" class="constant-name">URL_RTOKEN</a>
+        </code>
+
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#URL_RTOKEN" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'/auth/v1/oauth/token/request'</span></code>
+        </div>
+    </td>
+</tr>
+        </table>
+
+
+        <table class="summary table table-bordered table-responsive table-striped" id="properties">
+            <tr><th colspan="3">Properties Summary</th></tr>
+<tr id="$_apiKey">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Consumer
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#34" class="property-name">$_apiKey</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_apiKey" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_secret">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Consumer
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#38" class="property-name">$_secret</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_secret" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_requestToken">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\oauth_token
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#42" class="property-name">$_requestToken</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_requestToken" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_requestSecret">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\oauth_token_secret
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#46" class="property-name">$_requestSecret</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_requestSecret" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_accessToken">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Final
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#50" class="property-name">$_accessToken</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_accessToken" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_accessSecret">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Final
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#54" class="property-name">$_accessSecret</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_accessSecret" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_verifier">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\OAuth
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#58" class="property-name">$_verifier</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_verifier" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">NULL</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_epoint">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Entry
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#62" class="property-name">$_epoint</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_epoint" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'api'</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_mode">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Application
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#66" class="property-name">$_mode</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_mode" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'web'</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_verifySsl">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\SSL
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#70" class="property-name">$_verifySsl</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_verifySsl" class="anchor pull-right">#</a>
+            <code><span class="php-keyword1">true</span></code>
+        </div>
+    </td>
+</tr>
+<tr id="$_sigMethod">
+    <td class="attributes">
+        <code class="keyword">
+            protected static
+
+            Upwork\API\AuthTypes\Signature
+        </code>
+    </td>
+
+    <td class="name">
+        <code>
+            <a href="source-class-Upwork.API.AuthTypes.AbstractOAuth.html#74" class="property-name">$_sigMethod</a>
+        </code>
+        <div class="description">
+            
+
+        </div>
+    </td>
+    <td class="value">
+        <div>
+            <a href="#$_sigMethod" class="anchor pull-right">#</a>
+            <code><span class="php-quote">'HMAC-SHA1'</span></code>
+        </div>
+    </td>
+</tr>
+        </table>
+
+
+    <div id="footer">
+        Generated by <a href="https://github.com/apigen/apigen">ApiGen</a>
+    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="resources/jquery-3.2.1.min.js"></script>
+        <script src="resources/jquery-ui-1.12.1.min.js"></script>
+
+        <script src="elementlist.js"></script>
+        <script src="resources/main.js"></script>
+    </body>
 </html>
+
+
