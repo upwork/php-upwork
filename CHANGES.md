@@ -1,5 +1,9 @@
 # Release History
 
+## 1.3.0
+* Stop supporting deprecated Teamrooms API
+* Migrate Workdiaries, Workdays and Snapshots API to v3
+
 ## 1.2.4
 * fix a typo in the README
 * Readline ignores \n - add space between authorization URL and the second part of the promt

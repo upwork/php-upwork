@@ -43,61 +43,6 @@ final class Snapshot extends ApiClient
     }
 
     /**
-     * Get snapshot info
-     *
-     * @param   string $company Company
-     * @param   string $username Username
-     * @param   string $ts Timestamp
-     * @return  object
-     */
-    public function get($company, $username, $ts)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $response = $this->_client->get('/team/v1/snapshots/' . $company . '/' . $username . '/' . $ts);
-        ApiDebug::p('found response info', $response);
-
-        return $response;
-    }
-
-    /**
-     * Update snapshot
-     *
-     * @param   string $company Company
-     * @param   string $username Username
-     * @param   string $ts Timestamp
-     * @param   array $params Parameters
-     * @return  object
-     */
-    public function update($company, $username, $ts, $params)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $response = $this->_client->put('/team/v1/snapshots/' . $company . '/' . $username . '/' . $ts, $params);
-        ApiDebug::p('found response info', $response);
-
-        return $response;
-    }
-
-    /**
-     * Delete snapshot
-     *
-     * @param   string $company Company
-     * @param   string $username Username
-     * @param   string $ts Timestamp
-     * @return  object
-     */
-    public function delete($company, $username, $ts)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $response = $this->_client->delete('/team/v1/snapshots/' . $company . '/' . $username . '/' . $ts);
-        ApiDebug::p('found response info', $response);
-
-        return $response;
-    }
-
-    /**
      * Get snapshot info by specific contract
      *
      * @param   string $contractId Contract ID
@@ -108,7 +53,7 @@ final class Snapshot extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/team/v2/snapshots/contracts/' . $contractId . '/' . $ts);
+        $response = $this->_client->get('/team/v3/snapshots/contracts/' . $contractId . '/' . $ts);
         ApiDebug::p('found response info', $response);
 
         return $response;
@@ -126,7 +71,7 @@ final class Snapshot extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->put('/team/v2/snapshots/contracts/' . $contractId . '/' . $ts, $params);
+        $response = $this->_client->put('/team/v3/snapshots/contracts/' . $contractId . '/' . $ts, $params);
         ApiDebug::p('found response info', $response);
 
         return $response;
@@ -143,7 +88,7 @@ final class Snapshot extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->delete('/team/v2/snapshots/contracts/' . $contractId . '/' . $ts);
+        $response = $this->_client->delete('/team/v3/snapshots/contracts/' . $contractId . '/' . $ts);
         ApiDebug::p('found response info', $response);
 
         return $response;
