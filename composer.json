@@ -23,7 +23,9 @@
         "wiki": "http://developers.upwork.com"
     },
     "suggest": {
-        "ext-oauth": "This extension from PECL provides OAuth consumer and provider bindings. See more under http://www.php.net/oauth"
+        "ext-oauth": "This extension from PECL provides OAuth consumer and provider bindings. See more under http://www.php.net/oauth",
+	"apigen/apigen": "dev-master",
+        "roave/better-reflection": "dev-master"
     },
     "require": {
         "php": ">=5.3.3",
@@ -31,9 +33,7 @@
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
-        "phpunit/php-invoker": "*",
-	"apigen/apigen": "dev-master",
-        "roave/better-reflection": "dev-master"
+        "phpunit/php-invoker": "*"
     },
     "autoload": {
         "psr-0": {
