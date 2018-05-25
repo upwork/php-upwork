@@ -37,7 +37,7 @@ abstract class AbstractOAuth
      */
     static protected $_secret = null;
     /**
-     * @var oauth_token, shared request token (temporary)
+     * @var oauth_token shared request token (temporary)
      */
     static protected $_requestToken = null;
     /**
