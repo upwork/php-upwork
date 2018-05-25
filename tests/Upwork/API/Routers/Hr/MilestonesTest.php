@@ -76,7 +76,7 @@ class MilestonesTest extends CommonTestRouter
     public function testApprove()
     {
         $router = new \Upwork\API\Routers\Hr\Milestones($this->_client);
-        $response = $router->approve(array());
+        $response = $router->approve('1234', array());
         
         $this->_checkResponse($response);
     }
@@ -87,7 +87,7 @@ class MilestonesTest extends CommonTestRouter
     public function testDelete()
     {
         $router = new \Upwork\API\Routers\Hr\Milestones($this->_client);
-        $response = $router->delete(array());
+        $response = $router->delete('1234');
         
         $this->_checkResponse($response);
     }
