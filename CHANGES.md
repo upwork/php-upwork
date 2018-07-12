@@ -1,5 +1,8 @@
 # Release History
 
+## 1.3.1
+* Fixed non-working getByContract from Workdays API
+
 ## 1.3.0
 * Stop supporting deprecated Teamrooms API
 * Migrate Workdiaries, Workdays and Snapshots API to v3

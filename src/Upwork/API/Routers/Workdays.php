@@ -74,7 +74,7 @@ final class Workdays extends ApiClient
     {
         ApiDebug::p(__FUNCTION__);
 
-        $response = $this->_client->get('/team/v3/workdays/contracts/' . $company . '/' . $fromDate . ',' . $tillDate, $params);
+        $response = $this->_client->get('/team/v3/workdays/contracts/' . $contract . '/' . $fromDate . ',' . $tillDate, $params);
         ApiDebug::p('found response info', $response);
 
         return $response;
