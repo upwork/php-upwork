@@ -29,28 +29,6 @@ class BillingsTest extends CommonTestRouter
     /**
      * @test
      */
-    public function testGetByFreelancersTeam()
-    {
-        $router = new \Upwork\API\Routers\Reports\Finance\Billings($this->_client);
-        $response = $router->getByFreelancersTeam('12345', array());
-        
-        $this->_checkResponse($response);
-    }
-
-    /**
-     * @test
-     */
-    public function testGetByFreelancersCompany()
-    {
-        $router = new \Upwork\API\Routers\Reports\Finance\Billings($this->_client);
-        $response = $router->getByFreelancersCompany('12345', array());
-        
-        $this->_checkResponse($response);
-    }
-
-    /**
-     * @test
-     */
     public function testGetByBuyersTeam()
     {
         $router = new \Upwork\API\Routers\Reports\Finance\Billings($this->_client);

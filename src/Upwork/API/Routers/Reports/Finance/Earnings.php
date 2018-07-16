@@ -60,40 +60,6 @@ final class Earnings extends ApiClient
     }
 
     /**
-     * Generate Earning Reports for a Specific Freelancer's Team
-     *
-     * @param   integer $freelancerTeamReference Freelancer team reference
-     * @param   array $params Parameters
-     * @return  object
-     */
-    public function getByFreelancersTeam($freelancerTeamReference, $params)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $report = $this->_client->get('/finreports/v2/provider_teams/' . $freelancerTeamReference . '/earnings', $params);
-        ApiDebug::p('found report info', $report);
-
-        return $report;
-    }
-
-    /**
-     * Generate Earning Reports for a Specific Freelancer's Company
-     *
-     * @param   integer $freelancerCompanyReference Freelancer company reference
-     * @param   array $params Parameters
-     * @return  object
-     */
-    public function getByFreelancersCompany($freelancerCompanyReference, $params)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $report = $this->_client->get('/finreports/v2/provider_companies/' . $freelancerCompanyReference . '/earnings', $params);
-        ApiDebug::p('found report info', $report);
-
-        return $report;
-    }
-
-    /**
      * Generate Earning Reports for a Specific Buyer's Team
      *
      * @param   integer $buyerTeamReference Buyer team reference
