@@ -143,6 +143,7 @@ abstract class AbstractOAuth
             if (self::$_mode === 'web') {
                 // authorize web application via browser
                 header('Location: ' . $authUrl);
+                die();
             } elseif (self::$_mode === 'nonweb') {
                 // authorize nonweb application
                 ApiDebug::p('found [nonweb] mode, need to authorize application manually');
