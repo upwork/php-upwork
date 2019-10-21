@@ -1,5 +1,9 @@
 # Release History
 
+## 1.3.2
+* Add Specialties API
+* Add Skills V2 API
+
 ## 1.3.1
 * Fixed non-working getByContract from Workdays API
 
