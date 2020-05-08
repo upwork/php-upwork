@@ -1,5 +1,8 @@
 # Release History
 
+## 1.3.3
+* Add Room Messages API
+
 ## 1.3.2
 * Add Specialties API
 * Add Skills V2 API
