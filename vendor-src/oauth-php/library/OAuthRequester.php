@@ -458,7 +458,7 @@ class OAuthRequester extends OAuthRequestSigner
 		@list($headers,$body) = explode("\r\n\r\n",$response,2);
 		$lines = explode("\r\n",$headers);
 
-		if (preg_match('@^HTTP/[0-9]\.[0-9] +100@', $lines[0]))
+		if (preg_match('@^HTTP/([0-9]\.[0-9]|[0-9]) +100@', $lines[0]))
 		{
 			/* HTTP/1.x 100 Continue
 			 * the real data is on the next line
@@ -469,7 +469,7 @@ class OAuthRequester extends OAuthRequestSigner
 	
 		// first line of headers is the HTTP response code 
 		$http_line = array_shift($lines);
-		if (preg_match('@^HTTP/[0-9]\.[0-9] +([0-9]{3})@', $http_line, $matches))
+		if (preg_match('@^HTTP/([0-9]\.[0-9]|[0-9]) +([0-9]{3})@', $http_line, $matches))
 		{
 			$code = $matches[1];
 		}
