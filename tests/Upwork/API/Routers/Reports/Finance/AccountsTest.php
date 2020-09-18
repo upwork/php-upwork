@@ -10,20 +10,9 @@ class AccountsTest extends CommonTestRouter
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
-    }
-
-    /**
-     * @test
-     */
-    public function testGetOwned()
-    {
-        $router = new \Upwork\API\Routers\Reports\Finance\Accounts($this->_client);
-        $response = $router->getOwned('12345', array());
-        
-        $this->_checkResponse($response);
     }
 
     /**

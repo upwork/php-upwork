@@ -3,10 +3,11 @@ namespace Upwork\API\Tests\Routers;
 
 require __DIR__ . '/../../../../vendor/autoload.php';
 
+use PHPUnit\Framework\TestCase;
 use Upwork\API\Debug as ApiDebug;
 use Upwork\API\Config as ApiConfig;
 
-class CommonTestRouter extends \PHPUnit_Framework_TestCase
+class CommonTestRouter extends TestCase
 {
     /** @var Client mock */
     protected $_client;
@@ -14,7 +15,7 @@ class CommonTestRouter extends \PHPUnit_Framework_TestCase
     /**
      * Setup
      */
-    public function setUp()
+    protected function setUp(): void
     {
         $config = new ApiConfig(
             array(
@@ -25,13 +26,25 @@ class CommonTestRouter extends \PHPUnit_Framework_TestCase
 
         $result = new \StdClass;
         $result->server_time = '1111111111';
-        $result->auth_user = array();
+        $result->auth_user = [];
         $result->body = 1;
         
-        $stub = $this->getMock('Upwork\API\Client', array('_request'), array($config));
+	$stub = $this->getMockBuilder(\Upwork\API\Client::class)
+                     ->enableArgumentCloning()
+                     ->setConstructorArgs([$config])
+                     ->getMock();
         $stub->expects($this->any())
-             ->method('_request')
-             ->will($this->returnValue($result));
+             ->method('get')
+	     ->will($this->returnValue($result));
+        $stub->expects($this->any())
+             ->method('post')
+	     ->will($this->returnValue($result));
+        $stub->expects($this->any())
+             ->method('put')
+	     ->will($this->returnValue($result));
+        $stub->expects($this->any())
+             ->method('delete')
+	     ->will($this->returnValue($result));
 
         $this->_client = $stub;
     }
@@ -47,9 +60,9 @@ class CommonTestRouter extends \PHPUnit_Framework_TestCase
         $this->assertObjectHasAttribute('server_time', $response);
         $this->assertObjectHasAttribute('auth_user', $response);
         $this->assertObjectHasAttribute('body', $response);
-        $this->assertInternalType('string', $response->server_time);
-        $this->assertInternalType('array', $response->auth_user);
-        $this->assertInternalType('integer', $response->body);
+        $this->assertIsString($response->server_time);
+        $this->assertIsArray($response->auth_user);
+        $this->assertIsInt($response->body);
         $this->assertSame('1111111111', $response->server_time);
         $this->assertSame(1, $response->body);
     }

@@ -191,6 +191,24 @@ final class Messages extends ApiClient
     }
 
     /**
+     * Send a message to a batch of rooms
+     *
+     * @param   string $company Company ID
+     * @param   array $params List of parameters
+     * @access  public
+     * @return  object
+     */
+    public function sendMessageToRooms($company, $params = array())
+    {
+        ApiDebug::p(__FUNCTION__);
+
+        $response = $this->_client->post('/messages/v3/' . $company . '/stories/batch', $params);
+        ApiDebug::p('received data', $response);
+
+        return $response;
+    }
+
+    /**
      * Update a room settings
      *
      * @param   string $company Company ID

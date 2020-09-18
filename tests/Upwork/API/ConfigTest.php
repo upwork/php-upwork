@@ -3,16 +3,18 @@ namespace Upwork\API\Tests;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
+use PHPUnit\Framework\TestCase;
 use Upwork\API\Config as Config;
 use Upwork\API\ApiException as ApiException;
 
-class ConfigTest extends \PHPUnit_Framework_TestCase
+class ConfigTest extends TestCase
 {
     /**
      * @expectedException Upwork\API\ApiException
      */
     public function testBadProperty()
     {
+        $this->expectException(\Upwork\API\ApiException::class);
         throw new ApiException('test');
     }
 
@@ -27,7 +29,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
         $helper = new Config(array());
         $property->setValue($helper, true);
         $helper->__construct(array()); // will not change the attribute value
-        $this->assertAttributeEquals(true, '_verifySsl', $helper);
+	$this->assertTrue($helper::get('verifySsl'));
     }
 
     /**
@@ -35,13 +37,13 @@ class ConfigTest extends \PHPUnit_Framework_TestCase
      */
     public function testSetProperty()
     {
-        $reflection = new \ReflectionClass('Upwork\API\Config');
+        $reflection = new \ReflectionClass(Config::class);
         $property = $reflection->getProperty('_verifySsl');
         $property->setAccessible(true);
         $helper = new Config(array());
         $property->setValue($helper, false);
         $helper->__construct(array('verifySsl' => true));
-        $this->assertAttributeEquals(true, '_verifySsl', $helper);
+	$this->assertTrue($helper::get('verifySsl'));
     }
 
     /**

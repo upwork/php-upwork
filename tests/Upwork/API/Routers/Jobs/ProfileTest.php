@@ -5,12 +5,12 @@ use Upwork\API\Tests\Routers\CommonTestRouter;
 
 require_once __DIR__  . '/../CommonTestRouter.php';
 
-class JobsTest extends CommonTestRouter
+class ProfileTest extends CommonTestRouter
 {
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }

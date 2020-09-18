@@ -3,11 +3,12 @@ namespace Upwork\API\Tests;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
+use PHPUnit\Framework\TestCase;
 use Upwork\API\Debug as ApiDebug;
 use Upwork\API\Config as ApiConfig;
 use Upwork\API\Client as Client;
 
-class ClientTest extends \PHPUnit_Framework_TestCase
+class ClientTest extends TestCase
 {
     /**
      * @test
@@ -37,14 +38,13 @@ class ClientTest extends \PHPUnit_Framework_TestCase
                 'consumerSecret'    => 'secret'
             )
         );
-        $reflection = new \ReflectionClass('Upwork\API\Client');
+        $reflection = new \ReflectionClass(\Upwork\API\Client::class);
         $property = $reflection->getProperty('_server');
         $property->setAccessible(true);
         $helper = new Client($config);
         $property->setValue($helper, new \StdClass);
         $server = $helper->getServer();
 
-        $this->assertAttributeInstanceOf('StdClass', '_server', $helper);
         $this->assertInstanceOf('StdClass', $server);
     }
 
@@ -59,12 +59,14 @@ class ClientTest extends \PHPUnit_Framework_TestCase
                 'consumerSecret'    => 'secret'
             )
         );
-        $reflection = new \ReflectionClass('Upwork\API\Client');
+        $reflection = new \ReflectionClass(\Upwork\API\Client::class);
         $property = $reflection->getProperty('_server');
         $property->setAccessible(true);
         $helper = new Client($config);
 
-        $stub = $this->getMock('StdClass', array('setupRequestToken'));
+	$stub = $this->getMockBuilder(stdClass::class)
+                     ->setMethods(['setupRequestToken'])
+                     ->getMock();
         $stub->expects($this->any())
              ->method('setupRequestToken')
              ->will($this->returnValue('testtoken'));
@@ -85,12 +87,14 @@ class ClientTest extends \PHPUnit_Framework_TestCase
                 'consumerSecret'    => 'secret'
             )
         );
-        $reflection = new \ReflectionClass('Upwork\API\Client');
+        $reflection = new \ReflectionClass(\Upwork\API\Client::class);
         $property = $reflection->getProperty('_server');
         $property->setAccessible(true);
         $helper = new Client($config);
 
-        $stub = $this->getMock('StdClass', array('option', 'auth'));
+	$stub = $this->getMockBuilder(stdClass::class)
+                     ->setMethods(['option', 'auth'])
+                     ->getMock();
         $stub->expects($this->any())
              ->method('option')
              ->will($this->returnValue(true));
@@ -114,14 +118,16 @@ class ClientTest extends \PHPUnit_Framework_TestCase
                 'consumerSecret'    => 'secret'
             )
         );
-        $reflection = new \ReflectionClass('Upwork\API\Client');
+        $reflection = new \ReflectionClass(\Upwork\API\Client::class);
         $property = $reflection->getProperty('_server');
         $property->setAccessible(true);
         $method = $reflection->getMethod('_request');
         $method->setAccessible(true);
         $helper = new Client($config);
 
-        $stub = $this->getMock('StdClass', array('option', 'request'));
+	$stub = $this->getMockBuilder(stdClass::class)
+                     ->setMethods(['option', 'request'])
+                     ->getMock();
         $stub->expects($this->any())
              ->method('option')
              ->will($this->returnValue(true));
@@ -134,7 +140,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
         $response = $method->invoke($helper, 'GET', 'http://www.upwork.com/api/auth/v1/info', array());
         $this->assertInstanceOf('StdClass', $response);
         $this->assertObjectHasAttribute('a', $response);
-        $this->assertInternalType('string', $response->a);
+        $this->assertIsString($response->a);
         $this->assertSame('b', $response->a);
     }
 
@@ -150,9 +156,21 @@ class ClientTest extends \PHPUnit_Framework_TestCase
             )
         );
 
-        $stub = $this->getMock('Upwork\API\Client', array('_request'), array($config));
+	$stub = $this->getMockBuilder(\Upwork\API\Client::class)
+                     ->enableArgumentCloning()
+                     ->setConstructorArgs([$config])
+                     ->getMock();
         $stub->expects($this->any())
-             ->method('_request')
+             ->method('get')
+             ->will($this->returnValue('response'));
+        $stub->expects($this->any())
+             ->method('post')
+             ->will($this->returnValue('response'));
+        $stub->expects($this->any())
+             ->method('put')
+             ->will($this->returnValue('response'));
+        $stub->expects($this->any())
+             ->method('delete')
              ->will($this->returnValue('response'));
 
         foreach (array('get', 'post', 'put', 'delete') as $method) {

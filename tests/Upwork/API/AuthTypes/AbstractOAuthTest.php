@@ -3,9 +3,10 @@ namespace Upwork\API\Tests\AuthTypes;
 
 require __DIR__ . '/../../../../vendor/autoload.php';
 
+use PHPUnit\Framework\TestCase;
 use Upwork\API\AuthTypes\AbstractOAuth as AbstractOAuth;
 
-class AbstractOAuthTest extends \PHPUnit_Framework_TestCase
+class AbstractOAuthTest extends TestCase
 {
     /**
      * @test
@@ -104,6 +105,7 @@ class AbstractOAuthTest extends \PHPUnit_Framework_TestCase
      */
     public function testNoKeySpecified()
     {
+        $this->expectException(\Upwork\API\ApiException::class);
         $stub = $this->getMockForAbstractClass(
             'Upwork\API\AuthTypes\AbstractOAuth',
             array(null, 'secret')
@@ -119,6 +121,7 @@ class AbstractOAuthTest extends \PHPUnit_Framework_TestCase
      */
     public function testNoSecretSpecified()
     {
+        $this->expectException(\Upwork\API\ApiException::class);
         $stub = $this->getMockForAbstractClass(
             'Upwork\API\AuthTypes\AbstractOAuth',
             array('key', null)

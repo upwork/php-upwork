@@ -147,7 +147,7 @@ final class Milestones extends ApiClient
      * @param   integer $milestoneId Milestone ID
      * @return  object
      */
-    public function delete($milestoneId)
+    public function deleteMilestone($milestoneId)
     {
         ApiDebug::p(__FUNCTION__);
 

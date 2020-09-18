@@ -1,5 +1,13 @@
 # Release History
 
+## 1.4.0
+* Send Message to a Batch of Rooms API
+* Workdiary::get was replaced with Workdiary::getByCompany (breaking!)
+* Milestones::delete was replaced with Milestones::deleteMilestone (breaking!)
+* Migrate tests
+* Bug fixes
+* Stop supporting some Reports API according to announce from Thursday, 2018-06-28
+
 ## 1.3.3
 * Add Room Messages API
 

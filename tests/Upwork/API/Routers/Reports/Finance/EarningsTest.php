@@ -10,7 +10,7 @@ class EarningsTest extends CommonTestRouter
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -22,28 +22,6 @@ class EarningsTest extends CommonTestRouter
     {
         $router = new \Upwork\API\Routers\Reports\Finance\Earnings($this->_client);
         $response = $router->getByFreelancer('12345', array());
-        
-        $this->_checkResponse($response);
-    }
-
-    /**
-     * @test
-     */
-    public function testGetByFreelancersTeam()
-    {
-        $router = new \Upwork\API\Routers\Reports\Finance\Earnings($this->_client);
-        $response = $router->getByFreelancersTeam('12345', array());
-        
-        $this->_checkResponse($response);
-    }
-
-    /**
-     * @test
-     */
-    public function testGetByFreelancersCompany()
-    {
-        $router = new \Upwork\API\Routers\Reports\Finance\Earnings($this->_client);
-        $response = $router->getByFreelancersCompany('12345', array());
         
         $this->_checkResponse($response);
     }

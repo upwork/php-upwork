@@ -43,23 +43,6 @@ final class Accounts extends ApiClient
     }
 
     /**
-     * Generate Financial Reports for an owned Account
-     *
-     * @param   integer $freelancerReference Freelancer reference
-     * @param   array $params Parameters
-     * @return  object
-     */
-    public function getOwned($freelancerReference, $params)
-    {
-        ApiDebug::p(__FUNCTION__);
-
-        $report = $this->_client->get('/finreports/v2/financial_account_owner/' . $freelancerReference, $params);
-        ApiDebug::p('found report info', $report);
-
-        return $report;
-    }
-
-    /**
      * Generate Financial Reports for a Specific Account
      *
      * @param   integer $entityReference Entity reference
