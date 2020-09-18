@@ -38,6 +38,17 @@ class MessagesTest extends CommonTestRouter
     /**
      * @test
      */
+    public function testGetRoomMessages()
+    {
+        $router = new \Upwork\API\Routers\Messages($this->_client);
+        $response = $router->getRoomMessages('company', 'room-id', array());
+        
+        $this->_checkResponse($response);
+    }
+
+    /**
+     * @test
+     */
     public function testGetRoomByOffer()
     {
         $router = new \Upwork\API\Routers\Messages($this->_client);
