@@ -78,6 +78,25 @@ final class Messages extends ApiClient
     }
 
     /**
+     * Get messages from a specific room
+     *
+     * @param   string $company Company ID
+     * @param   string $roomId Room ID
+     * @param   array $params List of parameters
+     * @access  public
+     * @return  object
+     */
+    public function getRoomMessages($company, $roomId, $params = array())
+    {
+        ApiDebug::p(__FUNCTION__);
+
+        $response = $this->_client->get('/messages/v3/' . $company . '/rooms/' . $roomId . '/stories', $params);
+        ApiDebug::p('received data', $response);
+
+        return $response;
+    }
+
+    /**
      * Get a specific room by offer ID
      *
      * @param   string $company Company ID

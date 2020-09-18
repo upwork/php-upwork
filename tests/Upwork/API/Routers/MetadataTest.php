@@ -38,6 +38,28 @@ class MetadataTest extends CommonTestRouter
     /**
      * @test
      */
+    public function testGetSkillsV2()
+    {
+        $router = new \Upwork\API\Routers\Metadata($this->_client);
+        $response = $router->getSkillsV2();
+
+        $this->_checkResponse($response);
+    }
+
+    /**
+     * @test
+     */
+    public function testGetSpecialties()
+    {
+        $router = new \Upwork\API\Routers\Metadata($this->_client);
+        $response = $router->getSpecialties();
+
+        $this->_checkResponse($response);
+    }
+
+    /**
+     * @test
+     */
     public function testGetRegions()
     {
         $router = new \Upwork\API\Routers\Metadata($this->_client);

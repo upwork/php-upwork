@@ -1,7 +1,7 @@
-PHP bindings for Upwork API
+PHP bindings for Upwork API (OAuth1)
 ============
 
-[![License](http://img.shields.io/packagist/l/upwork/php-upwork.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
+[![License](https://img.shields.io/github/license/upwork/php-upwork)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Latest Stable Version](https://poser.pugx.org/upwork/php-upwork/v/stable.svg)](https://github.com/upwork/php-upwork/releases)
 [![Package version](http://img.shields.io/packagist/v/upwork/php-upwork.svg)](https://packagist.org/packages/upwork/php-upwork)
 [![Build status](https://travis-ci.org/upwork/php-upwork.svg)](http://travis-ci.org/upwork/php-upwork)
