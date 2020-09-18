@@ -3,7 +3,9 @@ namespace Upwork\API\Tests\Interfaces;
 
 require __DIR__ . '/../../../../vendor/autoload.php';
 
-class InterfaceClientTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ClientTest extends TestCase
 {
     /**
      * @test

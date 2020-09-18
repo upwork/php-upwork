@@ -8,7 +8,7 @@ class MessagesTest extends CommonTestRouter
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -19,7 +19,7 @@ class MessagesTest extends CommonTestRouter
     public function testGetRooms()
     {
         $router = new \Upwork\API\Routers\Messages($this->_client);
-        $response = $router->getRooms();
+        $response = $router->getRooms('company');
         
         $this->_checkResponse($response);
     }
@@ -87,6 +87,17 @@ class MessagesTest extends CommonTestRouter
         $router = new \Upwork\API\Routers\Messages($this->_client);
         $response = $router->sendMessageToRoom('company', 'room-id', array());
         
+        $this->_checkResponse($response);
+    }
+
+    /**
+     * @test
+     */
+    public function testSendMesageToRooms()
+    {
+        $router = new \Upwork\API\Routers\Messages($this->_client);
+        $response = $router->sendMessageToRooms('company', array());
+
         $this->_checkResponse($response);
     }
 

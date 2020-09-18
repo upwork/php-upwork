@@ -8,7 +8,7 @@ class WorkdiaryTest extends CommonTestRouter
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -16,10 +16,10 @@ class WorkdiaryTest extends CommonTestRouter
     /**
      * @test
      */
-    public function testGet()
+    public function testGetByCompany()
     {
         $router = new \Upwork\API\Routers\Workdiary($this->_client);
-        $response = $router->get('company', '20140101', array());
+        $response = $router->getByCompany('company', '20140101', array());
         
         $this->_checkResponse($response);
     }
@@ -30,7 +30,7 @@ class WorkdiaryTest extends CommonTestRouter
     public function testGetByContract()
     {   
         $router = new \Upwork\API\Routers\Workdiary($this->_client);
-        $response = $router->getByContract('1234', array());
+        $response = $router->getByContract('1234', '20140101', array());
     
         $this->_checkResponse($response);
     }

@@ -3,9 +3,10 @@ namespace Upwork\API\Tests;
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
+use PHPUnit\Framework\TestCase;
 use Upwork\API\Debug as ApiDebug;
 
-class DebugTest extends \PHPUnit_Framework_TestCase
+class DebugTest extends TestCase
 {
     /**
      * @test
@@ -17,14 +18,13 @@ class DebugTest extends \PHPUnit_Framework_TestCase
         $property->setAccessible(true);
         $helper = new ApiDebug();
         $property->setValue($helper, true);
-        $this->assertAttributeEquals(true, '_debug', $helper);
 
         ob_start();
         ApiDebug::p('test message');
         $output = ob_get_contents();
         ob_end_clean();
 
-        $this->assertContains('test message', $output);
+        $this->assertStringContainsString('test message', $output);
         $property->setValue($helper, false);
     }
 }

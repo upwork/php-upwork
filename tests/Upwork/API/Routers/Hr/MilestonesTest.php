@@ -10,7 +10,7 @@ class MilestonesTest extends CommonTestRouter
     /**
      * Setup
      */
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
@@ -87,7 +87,7 @@ class MilestonesTest extends CommonTestRouter
     public function testDelete()
     {
         $router = new \Upwork\API\Routers\Hr\Milestones($this->_client);
-        $response = $router->delete('1234');
+        $response = $router->deleteMilestone('1234');
         
         $this->_checkResponse($response);
     }

@@ -5,7 +5,7 @@
     "type": "library",
     "keywords": ["upwork", "php", "api"],
     "homepage": "http://www.upwork.com",
-    "time": "2018-07-24",
+    "time": "2020-09-09",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -32,7 +32,7 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "3.7.*",
+        "phpunit/phpunit": "^9",
         "phpunit/php-invoker": "*"
     },
     "autoload": {
