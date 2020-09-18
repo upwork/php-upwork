@@ -14,7 +14,7 @@ matrix:
     - "5.6"
   fast_finish: true
 
-script: ./vendor/phpunit/phpunit/phpunit.php --stderr
+script: ./vendor/phpunit/phpunit/phpunit --stderr
 
 notifications:
   email:
