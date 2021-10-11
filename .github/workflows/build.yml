@@ -26,7 +26,5 @@ jobs:
         with:
           php_version: ${{ matrix.php }}
           version: 2
-      - name: Install dependencies
-        run: composer install --prefer-dist --dev
       - name: Run tests
         run: ./vendor/phpunit/phpunit/phpunit --stderr
