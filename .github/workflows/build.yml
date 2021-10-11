@@ -21,10 +21,14 @@ jobs:
     name: PHP ${{ matrix.python }}
     steps:
       - uses: actions/checkout@v2
+      - name: Setup PHP with tools
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
       - name: Setup PHP/composer
         uses: php-actions/composer@v6
         with:
-          php-version: ${{ matrix.php }}
+          php_version: ${{ matrix.php }}
           version: 2
       - name: Run tests
         run: ./vendor/phpunit/phpunit/phpunit --stderr
