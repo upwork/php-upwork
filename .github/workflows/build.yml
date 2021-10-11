@@ -1,0 +1,32 @@
+name: build
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+  pull_request:
+    paths-ignore:
+      - '**.md'
+
+jobs:
+  test:
+
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+        php: [ '7.3', '7.4' ]
+
+    name: PHP ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup PHP/composer
+        uses: php-actions/composer@v6
+        with:
+          php_version: ${{ matrix.php }}
+          version: 2
+      - name: Install dependencies
+        run: composer install --prefer-dist --dev
+      - name: Run tests
+      - run: ./vendor/phpunit/phpunit/phpunit --stderr
