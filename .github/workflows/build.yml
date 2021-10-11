@@ -24,7 +24,7 @@ jobs:
       - name: Setup PHP/composer
         uses: php-actions/composer@v6
         with:
-          php_version: ${{ matrix.php }}
+          php-version: ${{ matrix.php }}
           version: 2
       - name: Run tests
         run: ./vendor/phpunit/phpunit/phpunit --stderr
