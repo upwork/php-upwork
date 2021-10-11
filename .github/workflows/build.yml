@@ -29,4 +29,4 @@ jobs:
       - name: Install dependencies
         run: composer install --prefer-dist --dev
       - name: Run tests
-      - run: ./vendor/phpunit/phpunit/phpunit --stderr
+        run: ./vendor/phpunit/phpunit/phpunit --stderr
