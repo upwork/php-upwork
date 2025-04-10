@@ -1,4 +1,4 @@
-PHP bindings for Upwork API (OAuth1)
+PHP bindings for Upwork API (OAuth1) - DEPRECATED
 ============
 
 [![License](https://img.shields.io/github/license/upwork/php-upwork)](http://www.apache.org/licenses/LICENSE-2.0.html)
